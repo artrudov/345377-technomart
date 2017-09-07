@@ -130,6 +130,10 @@ body {
 
 }
 
+.form-search:hover {
+  background-color: #fff;
+}
+
 .form-search__label {
   display: inline-block;
   width: 30px;
@@ -138,19 +142,27 @@ body {
   background-size: 17px 17px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  opacity: 0.5;
+}
+
+.form-search__label:hover {
+  color: red;
+  /*Чего-то я уже непонимаю*/
 }
 
 .form-search__input {
-
+  display: inline-block;
+  box-sizing: border-box;
   width: 230px;
   height: 42px;
-  padding: 10px 10px;
+  padding: 10px;
+  vertical-align: top;
   font-size: 17px;
   font-family: "Cuprum", "Arial", sans-serif;
   color: #fff;
   background-color: #293449;
   border: none;
-  box-sizing: border-box;
+
 }
 
 .form-search__input:hover,
