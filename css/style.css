@@ -60,6 +60,7 @@ body {
   color: #000000;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: normal;
+  font-style: normal;
 }
 
 .promo-item__title {
@@ -80,4 +81,40 @@ body {
 *:focus {
   outline: blue solid;
   outline-width: 2px;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.container__header {
+  background-color: #293449;
+}
+
+.container_breadth-full {
+  width: 100%;
+}
+
+
+.top-header {
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 960px;
+  min-height: 42px;
+}
+
+.top-header__logo {
+  width: 220px;
+  background-color: #ee3643;
+  border-bottom: 5px solid #b52933;
+  font-size: 24px;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
