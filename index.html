@@ -3,34 +3,37 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="main-header">
 
-      <div class="container container__header container_breadth container_breadth_full">
+      <div class="container container__header container_breadth-full">
         <section class="top-header">
 
-          <h2 class="visually-hidden">
-            Поле поиска и управление покупками</h2>
+          <h2 class="visually-hidden">Поле поиска и управление покупками</h2>
 
           <div class="top-header__logo">Техномарт</div>
           <form class="form-search">
-            <input type="search" placeholder="Поиск" class="form-search__input" id="search-input"/>
-            <label for="search-input">
 
+            <input type="search" id="search-input" class="form-search__input" placeholder="Поиск:" />
+            <label for="search-input" class="form-search__label">
+              <svg class="form-search__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                <path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
+              </svg>
             </label>
           </form>
           <ul class="price-menu">
-            <li class="price-menu__item">
-              <a href="#" class="price-menu__link">Закладки: 0</a>
+            <li class="price-menu__item price-menu__bookmark">
+              <a href="#" class="price-menu__link ">Закладки: 0</a>
             </li>
-            <li class="price-menu__item">
+            <li class="price-menu__item price-menu__cart">
               <a href="#" class="price-menu__link">Корзина: 0</a>
             </li>
-            <li class="price-menu__item">
-              <a href="#" class="price-menu__link">Оформить заказ: 0</a>
+            <li class="price-menu__item price-menu__place-order">
+              <a href="#" class="price-menu__link ">Оформить заказ</a>
             </li>
           </ul>
         </section>
@@ -51,10 +54,10 @@
             г. Санкт-Петебург, ул. Б. Конюшенная, д. 19/8</p>
         </address>
         <ul class="user-menu">
-          <li class="user-menu__log-in">
+          <li class="user-menu__item user-menu__log-in">
             <a href="#">Войти</a>
           </li>
-          <li class="user-menu__registration" >
+          <li class="user-menu__item user-menu__registration" >
             <a href="#">Регистрация</a>
           </li>
         </ul>
@@ -69,7 +72,7 @@
             <a href="#" class="main-menu__link">Компания</a>
           </li>
           <li class="main-menu__item">
-            <a href="#" class="main-menu__link">Каталог</a>
+            <a href="catalog.html" class="main-menu__link">Каталог</a>
           </li>
           <li class="main-menu__item">
             <a href="#" class="main-menu__link">Новости</a>
@@ -96,12 +99,12 @@
       <section class="promo-content">
         <div class="promo-content__column promo-content__column_position promo-content__column_position_left">
 
-          <div class="promo-item new">
+          <div class="promo-item promo-item__material new">
             <h2 class="promo-item__title">Материалы</h2>
             <a href="#" class="promo-item__link">На любой вкус</a>
           </div>
 
-          <div class="promo-item new">
+          <div class="promo-item promo-item__tool">
             <h2 class="promo-item__title">Инструмент</h2>
             <a href="#" class="promo-item__link">На все случаи</a>
           </div>
@@ -111,7 +114,13 @@
             <div class="carousel-tabs">
               <input id="carousel-tabs__1" type="radio" name="promo-carousel-tab"
               checked="checked" />
+              <label for="carousel-tabs__1">
+                Первый слайд
+              </label>
               <input id="carousel-tabs__2" type="radio" name="promo-carousel-tab" />
+              <label for="carousel-tabs__2">
+                Второй слайд
+              </label>
 
             <div class="promo-carousel">
               <div id="promo-carousel__1">
@@ -142,17 +151,17 @@
 
         <div class="promo-content__column promo-content__column_position promo-content__column_position_right">
 
-          <div class="promo-item">
+          <div class="promo-item promo-item__technics">
             <h2 class="promo-item__title">Техника</h2>
             <a href="#" class="promo-item__link">для стройки</a>
           </div>
 
-          <div class="promo-item">
+          <div class="promo-item promo-item__discounts">
             <h2 class="promo-item__title">Скидки 50%</h2>
             <a href="#" class="promo-item__link">На 350 товаров</a>
           </div>
 
-          <div class="promo-item new-item">
+          <div class="promo-item promo-item__deliver">
             <h2 class="promo-item__title">Доставка</h2>
             <a href="#" class="promo-item__link">Бесплатно</a>
           </div>
@@ -265,6 +274,7 @@
           <div class="accordion-tabs">
             <input id="accordion-tabs__1" type="radio" name="accordion-tab" checked="checked" />
             <input id="accordion-tabs__2" type="radio" name="accordion-tab" />
+
             <input id="accordion-tabs__3" type="radio" name="accordion-tab" />
 
           <ul class="services-label-tabs">

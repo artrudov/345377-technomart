@@ -1,24 +1,403 @@
+@font-face {
+    font-family: "Cuprum";
+    src: local("Cuprum");
+    src: url("../fonts/cuprum.woff2") format("woff2"),
+         url("../fonts/cuprum.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cuprum";
+    src: local("Cuprum Bold"), local("CuprumBold");
+    src: url("../fonts/cuprumbold.woff2") format("woff2"),
+         url("../fonts/cuprumbold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cuprum";
+    src: local("Cuprum Italic"), local("CuprumItalic");
+    src: url("../fonts/cuprumitalic.woff2") format("woff2"),
+         url("../fonts/cuprumitalic.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Cuprum";
+    src: local("Cuprum Bold Italic"), local("CuprumBoldItalic");
+    src: url("../fonts/cuprumbolditalic.woff2") format("woff2"),
+         url("../fonts/cuprumbloditalic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    src: local("PT Sans"), local("PTSans");
+    src: url("../fonts/ptsans.woff2") format("woff2"),
+         url("../fonts/ptsans.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cuprum";
+    src: local("PT Sans Bold"), local("PTSansBold");
+    src: url("../fonts/ptsansbold.woff2") format("woff2"),
+         url("../fonts/ptsansbold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-size: 13px;
   line-height: 125%;
   color: #000000;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: normal;
+  font-style: normal;
 }
 
-.promo-item__title {
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: bold;
-  color: #ffffff;
-  font-family: "Cuprum", sans-serif;
+a {
+  text-decoration: none;
 }
+
+
 
 .catalog-item__title {
   font-size: 18px;
   line-height: 20px;
   font-weight: bold;
   color: #000000;
+}
+
+*:focus {
+  outline: blue solid;
+  outline-width: 2px;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.main-header {
+  background-color: #f3f7f8;
+  min-height: 320px;
+}
+
+.container__header {
+  background-color: #293449;
+}
+
+.container_breadth-full {
+  width: 100%;
+}
+
+.top-header {
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 960px;
+  min-height: 42px;
+}
+
+.top-header__logo {
+  width: 220px;
+  background-color: #ee3643;
+  border-bottom: 5px solid #b52933;
+  font-size: 24px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  cursor: pointer;
+}
+
+.top-header__logo:hover {
+  background-color: #ca2c37;
+}
+
+.form-search {
+  width: 270px;
+  height: 42px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.form-search__label {
+  display: inline-block;
+  width: 44px;
+  height: 42px;
+  margin-left: -4px;
+}
+
+ .form-search__icon {
+   padding-top: 12px;
+   padding-right: 10px;
+   padding-bottom: 13px;
+   padding-left: 17px;
+}
+
+.form-search__input {
+  box-sizing: border-box;
+  width: 226px;
+  height: 42px;
+  padding: 14px;
+  vertical-align: top;
+  font-size: 17px;
+  color: #fff;
+  background-color: #293449;
+  border: none;
+}
+
+.form-search__input:focus,
+.form-search__input:focus ~ .form-search__label {
+  background-color: #fff;
+  color: #000;
+  outline: none;
+  fill: #ee3643;
+}
+
+.form-search__input::-webkit-input-placeholder {color:#fff;}
+.form-search__input::-moz-placeholder          {color:#fff;}
+.form-search__input:-moz-placeholder           {color:#fff;}
+.form-search__input:-ms-input-placeholder      {color:#fff;}
+
+.price-menu, .user-menu,
+.main-menu, .catalog-list,
+.manufacturers-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.price-menu__item{
+  display: inline-block;
+  position: relative;
+  width: 150px;
+  height: 42px;
+  text-align: center;
+}
+
+.price-menu__bookmark::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 42px;
+  left: 0;
+  background-image: url("../img/icons/icon-bookmark.svg");
+  background-size: 14px 16px;
+  background-repeat: no-repeat;
+}
+
+.price-menu__cart::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 42px;
+  left: 0;
+  background-image: url("../img/icons/icon-cart.svg");
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+}
+
+.price-menu__place-order {
+  background-color: #63a63e;
+}
+
+.price-menu__link {
+  font-size: 17px;
+  line-height: 18px;
+  color: #fff;
+}
+
+.price-menu__link:active {
+  opacity: 0.5;
+  background-color: #161d29;
+}
+
+.price-menu__place-order:hover {
+  background-color: #5fbb2d;
+  outline: none;
+}
+
+.price-menu__place-order:active {
+  opacity: 0.5;
+  outline: none;
+}
+
+
+.middle-header {
+  width: 960px;
+  min-height: 160px;
+  margin: 0 auto;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.middle-header__description {
+  margin-top: 0;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ee3643;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.header-contact__phone::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 42px;
+  left: 0;
+  background-image: url("../img/icons/icon-phone.svg");
+  background-size: 14px 16px;
+  background-repeat: no-repeat;
+}
+
+.header-contact__phone {
+  position: relative;
+  width: 270px;
+  height: 45px;
+  border: 3px solid #ffffff;
+  text-align: center;
+  font-size: 21px;
+  line-height: 18px;
+  font-style: normal;
+  font-weight: bold;
+  color: #ee3643;
+}
+
+.header-contact__address {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.user-menu__item {
+  display: inline-block;
+  position: relative;
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 21px;
+  line-height: 18px;
+}
+
+.user-menu__log-in {
+  width: 121px;
+  height: 45px;
+}
+
+.user-menu__log-in::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 42px;
+  left: 0;
+  background-image: url("../img/icons/icon-login.svg");
+  background-size: 14px 16px;
+  background-repeat: no-repeat;
+}
+
+.user-menu__registration {
+  width: 150px;
+  height: 45px;
+}
+
+.main-navigation {
+  width: 960px;
+  height: 55px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin: 0 auto;
+  background-color: #32425c;
+  border-bottom: 5px solid #293449;
+}
+
+.main-menu__item {
+  display: inline-block;
+}
+
+.main-menu__link {
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff
+}
+
+.promo-content {
+  width: 960px;
+  margin: 0 auto;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.promo-item {
+  width: 300px;
+  height: 123px;
+}
+
+.promo-item__material {
+  background-color: #ffbf47;
+  background-image: url("../img/icons/icon-1.svg");
+  background-repeat: no-repeat;
+  background-size: 44px 65px;
+  background-position: 213px 31px;
+}
+
+.promo-item__tool {
+  background-color: #3bbce3;
+  background-image: url("../img/icons/icon-2.svg");
+  background-repeat: no-repeat;
+  background-size: 61px 75px;
+  background-position: 197px 31px;
+}
+
+.promo-item__technics {
+  background-color: #dc91d8;
+  background-image: url("../img/icons/icon-3.svg");
+  background-repeat: no-repeat;
+  background-size: 78px 62px;
+  background-position: 191px 31px;
+}
+
+.promo-item__discounts {
+  background-color: #8ed78f;
+  background-image: url("../img/icons/icon-4.svg");
+  background-repeat: no-repeat;
+  background-size: 59px 73px;
+  background-position: 196px 26px;
+}
+
+.promo-item__deliver {
+  background-color: #ffc047;
+  background-image: url("../img/icons/icon-5.svg");
+  background-repeat: no-repeat;
+  background-size: 78px 63px;
+  background-position: 191px 32px;
+}
+
+.promo-item__title {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.promo-item__link {
+  display: inline-block;
+  width: 135px;
+  height: 38px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
 }
