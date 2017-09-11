@@ -474,7 +474,9 @@ main {
 .popular-manufacturers,
 .services,
 .about-company,
-.main-footer {
+.footer-top,
+.footer-middle,
+.footer-bottom {
   margin: 0;
   padding: 0;
   width: 940px;
@@ -603,28 +605,6 @@ main {
   width: 220px;
 }
 
-.footer-top__logo {
-  width: 220px;
-  background-color: #ee3643;
-  border-bottom: 5px solid #b52933;
-  font-size: 24px;
-  color: #fff;
-  text-transform: uppercase;
-  text-align: center;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  cursor: pointer;
-}
-
-.footer-menu__list {
-  list-style: none;
-}
-
-.footer-menu__item,
-.footer-middle__menu-item {
-  display: inline-block;
-}
-
 .container__footer-top {
   background-color: #32425c;
 }
@@ -633,7 +613,104 @@ main {
   background-color: #293449;
 }
 
+.footer-top__logo {
+  width: 220px;
+  background-color: #ee3643;
+  border-bottom: 5px solid #b52933;
+  font-size: 24px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  cursor: pointer;
+}
+
+.footer-menu__list,
+.footer-middle__menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-menu__item,
+.footer-middle__menu-item {
+  display: inline-block;
+}
+
 .footer-menu__link,
 .footer-middle__link {
+  font-size: 18px;
+  line-height: 24px;
   color: #ffffff;
+}
+
+.footer-middle {
+  min-height: 125px;
+}
+
+.footer-middle__address{
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.footer-middle__link,
+.footer-feedback__mail-link,
+.footer-feedback__link {
+  color: #ffd180;
+}
+
+.footer-bottom {
+  min-height: 105px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.bottom-footer__copyright {
+  margin: 0;
+  padding: 0;
+}
+
+.bottom-footer__social-button {
+  font-size: 0;
+}
+
+.bottom-footer__vk-icon,
+.bottom-footer__facebook-icon,
+.bottom-footer__twitter-icon {
+  display: table;
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  background-color: #212a3a;
+  background-position: 50% 50%;
+}
+
+.bottom-footer__vk-icon {
+
+  background-image: url("../img/icons/icon-vk.svg");
+  background-repeat: no-repeat;
+  background-size: 26px 15px;
+}
+
+.bottom-footer__facebook-icon {
+
+  background-image: url("../img/icons/icon-fb.svg");
+  background-repeat: no-repeat;
+  background-size: 12px 22px;
+}
+
+.bottom-footer__twitter-icon {
+
+  background-image: url("../img/icons/icon-insta.svg");
+  background-repeat: no-repeat;
+  background-size: 21px 21px;
+}
+
+.footer-feedback__mail,
+.footer-feedback__powered-by {
+  margin: 0;
+  padding: 0;
 }
