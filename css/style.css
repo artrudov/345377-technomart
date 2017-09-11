@@ -84,12 +84,16 @@ a {
   width: 100%;
 }
 
+.top-header,
+.middle-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .top-header {
   margin: 0 auto;
-  padding-left: 10px;
-  padding-right: 10px;
   width: 940px;
-  min-height: 42px;
 }
 
 .top-header__logo {
@@ -163,8 +167,13 @@ a {
   list-style: none;
 }
 
+.price-menu {
+  width: 450px;
+  display: flex;
+  flex-direction: row;
+}
+
 .price-menu__item{
-  display: inline-block;
   position: relative;
   width: 150px;
   padding-top: 14px;
@@ -175,9 +184,10 @@ a {
 .price-menu__bookmark::before {
   content: "";
   position: absolute;
-  width: 50px;
-  height: 42px;
-  left: 0;
+  width: 14px;
+  height: 16px;
+  top: 12px;
+  left: 18px;
   background-image: url("../img/icons/icon-bookmark.svg");
   background-size: 14px 16px;
   background-repeat: no-repeat;
@@ -186,9 +196,10 @@ a {
 .price-menu__cart::before {
   content: "";
   position: absolute;
-  width: 50px;
-  height: 42px;
-  left: 0;
+  width: 15px;
+  height: 15px;
+
+  left: 18px;
   background-image: url("../img/icons/icon-cart.svg");
   background-size: 15px 15px;
   background-repeat: no-repeat;
@@ -220,15 +231,15 @@ a {
 }
 
 .middle-header {
-  width: 960px;
-  min-height: 160px;
+  width: 940px;
   margin: 0 auto;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-top: 46px;
+  padding-bottom: 44px;
 }
 
 .middle-header__description {
-  margin-top: 0;
+  margin: 0;
+  width: 247px;
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
@@ -236,7 +247,12 @@ a {
   font-weight: normal;
 }
 
+.header-contact {
+  width: 300px;
+}
+
 .header-contact__phone {
+  margin: 0;
   position: relative;
   width: 270px;
   padding-top: 11px;
@@ -262,23 +278,38 @@ a {
 }
 
 .header-contact__address {
+  margin: 0;
   font-size: 14px;
   line-height: 24px;
 }
 
+.user-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 281px;
+  height: 45px;
+}
+
 .user-menu__item {
-  display: inline-block;
   position: relative;
   background-color: #ffffff;
   text-align: center;
   font-size: 21px;
   line-height: 18px;
+  color: #000000;
+}
+
+.user-menu__link {
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 15px;
 }
 
 .user-menu__log-in {
-  width: 121px;
-  padding-top: 14px;
-  padding-bottom: 15px;
+  width: 73px;
+  padding-left: 48px;
+  text-align: left;
 }
 
 .user-menu__log-in::before {
@@ -286,7 +317,8 @@ a {
   position: absolute;
   width: 20px;
   height: 17px;
-  left: 0;
+  top: 14px;
+  left: 14px;
   background-image: url("../img/icons/icon-login.svg");
   background-size: 20px 17px;
   background-repeat: no-repeat;
@@ -294,39 +326,34 @@ a {
 
 .user-menu__registration {
   width: 150px;
-  padding-top: 14px;
-  padding-bottom: 15px;
+  margin-left: 7px;
 }
 
-.user-menu__log-in,
-.user-menu__registration {
-  display: inline-block;
-  font-size: 21px;
-  line-height: 18px;
-  color: #000000;
-}
 
 .main-navigation {
   width: 940px;
-
-  padding-right: 10px;
-  padding-left: 10px;
   margin: 0 auto;
   background-color: #32425c;
   border-bottom: 5px solid #293449;
 }
 
-.main-menu__item {
-  display: inline-block;
+.main-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 55px;
 }
 
 .main-menu__link {
-  display: inline-block;
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
   padding-top: 22px;
   padding-bottom: 21px;
+}
+
+.main-menu__link:hover {
+  background-color: #293449;
 }
 
 main {
@@ -337,6 +364,7 @@ main {
 .promo-content {
   padding: 0;
   margin: 0;
+  padding-top: 60px;
   width: 960px;
   margin: 0 auto;
 }
@@ -465,13 +493,7 @@ main {
   text-transform: uppercase;
 }
 
-.popular-items,
-.popular-manufacturers,
-.services,
-.about-company,
-.footer-top,
-.footer-middle,
-.footer-bottom {
+main {
   margin: 0;
   padding: 0;
   width: 940px;
@@ -489,6 +511,57 @@ main {
   width: 253px;
 }
 
+.breadcumbs__list {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  list-style-image: url("../img/icons/icon-right-small.svg");
+}
+
+.breadcumbs__item {
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+/*КАКАЯ-ТО ХРЕНЬ С ХЛЕБНЫМИ КРОШКАМИ*/
+.breadcumbs__item:first-child{
+  padding: 0;
+  margin-left: 0;
+  list-style: none;
+}
+
+.breadcumbs__link {
+  margin-left: 15px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.breadcumbs__home {
+  margin-left: 0;
+}
+
+.catalog__header {
+  padding-top: 33px;
+  padding-bottom: 35px;
+  padding-left: 30px;
+  background-color: #f2f6f8;
+}
+
+.catalog__title {
+  margin: 0;
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+}
+
+.filter {
+
+}
+
 .catalog-list {
   display: flex;
   flex-direction: row;
@@ -499,6 +572,7 @@ main {
 .catalog-item {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
   flex-basis: 220px;
   min-height: 318px;
   align-items: center;
