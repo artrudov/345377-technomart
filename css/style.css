@@ -67,11 +67,6 @@ a {
   text-decoration: none;
 }
 
-*:focus {
-  outline: blue solid;
-  outline-width: 2px;
-}
-
 .visually-hidden {
   display: none;
 }
@@ -523,6 +518,17 @@ main {
   width: 220px;
   height: 145px;
   border: 1px solid #ebebeb;
+  margin-bottom: 20px;
+}
+
+.manufacturers-list__item:hover,
+.manufacturers-list__item:focus {
+  box-shadow: 0 10px 25px 0px rgba(41, 52, 73, 0.5);
+}
+
+.manufacturers-list__item:active {
+  box-shadow: 0 4px 10px 0px rgba(41, 52, 73, 1);
+  opacity: 0.5;
 }
 
 .container__services {
@@ -661,6 +667,20 @@ main {
   color: #ffd180;
 }
 
+.footer-menu__link:hover,
+.footer-middle__link:hover,
+.footer-feedback__mail-link:hover,
+.footer-feedback__link:hover,
+.footer-menu__link:focus,
+.footer-middle__link:focus {
+  text-decoration: underline;
+}
+
+.footer-menu__link:active,
+.footer-middle__link:active {
+  opacity: 0.5;
+}
+
 .footer-bottom {
   min-height: 105px;
   font-size: 16px;
@@ -689,28 +709,45 @@ main {
 }
 
 .bottom-footer__vk-icon {
-
   background-image: url("../img/icons/icon-vk.svg");
   background-repeat: no-repeat;
   background-size: 26px 15px;
 }
 
 .bottom-footer__facebook-icon {
-
   background-image: url("../img/icons/icon-fb.svg");
   background-repeat: no-repeat;
   background-size: 12px 22px;
 }
 
 .bottom-footer__twitter-icon {
-
   background-image: url("../img/icons/icon-insta.svg");
   background-repeat: no-repeat;
   background-size: 21px 21px;
 }
 
+.bottom-footer__vk-icon:hover,
+.bottom-footer__facebook-icon:hover,
+.bottom-footer__twitter-icon:hover,
+.bottom-footer__vk-icon:active,
+.bottom-footer__facebook-icon:active,
+.bottom-footer__twitter-icon:active,
+.bottom-footer__vk-icon:focus,
+.bottom-footer__facebook-icon:focus,
+.bottom-footer__twitter-icon:focus {
+  background-color: #ee3643;
+}
+
+
 .footer-feedback__mail,
 .footer-feedback__powered-by {
   margin: 0;
   padding: 0;
+}
+
+.footer-feedback__mail-link:active,
+.footer-feedback__link:active,
+.footer-feedback__mail-link:focus,
+.footer-feedback__link:focus {
+  color: #ee3643;
 }
