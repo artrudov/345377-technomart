@@ -298,12 +298,14 @@ a {
   font-size: 21px;
   line-height: 18px;
   color: #000000;
+
 }
 
 .user-menu__link {
   display: block;
   padding-top: 14px;
   padding-bottom: 15px;
+  color: #000000;
 }
 
 .user-menu__log-in {
@@ -329,6 +331,13 @@ a {
   margin-left: 7px;
 }
 
+.user-menu__link:hover {
+  color: #ee3643;
+}
+
+.user-menu__link:active {
+  opacity: 0.5;
+}
 
 .main-navigation {
   width: 940px;
@@ -341,40 +350,55 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: 55px;
 }
 
 .main-menu__link {
+  display: block;
+  height: 55px;
   font-size: 17px;
-  line-height: 17px;
+  line-height: 60px;
   color: #ffffff;
-  padding-top: 22px;
-  padding-bottom: 21px;
+  height: 55px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .main-menu__link:hover {
   background-color: #293449;
 }
 
+.main-menu__link:active{
+  background-color: #1d2739;
+  opacity: 0.5;
+}
+
 main {
   margin: 0;
   padding: 0;
+  width: 940px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
 }
 
 .promo-content {
-  padding: 0;
-  margin: 0;
   padding-top: 60px;
-  width: 960px;
-  margin: 0 auto;
+  display: flex;
 }
 
 .promo-item {
   width: 300px;
   height: 123px;
+  margin-bottom: 20px;
+}
+
+.promo-content__column_position_left {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .promo-item__material {
+  margin-right: 20px;
   background-color: #ffbf47;
   background-image: url("../img/icons/icon-1.svg");
   background-repeat: no-repeat;
@@ -417,8 +441,11 @@ main {
 .promo-item__title {
   margin: 0;
   padding: 0;
+  padding-top: 26px;
+  padding-left: 22px;
+  padding-bottom:20px;
   font-size: 24px;
-  line-height: 30px;
+  line-height: 9px;
   font-weight: bold;
   color: #ffffff;
 }
@@ -428,9 +455,10 @@ main {
 .content-header__link,
 .catalog-item__link,
 .about-company__link {
-  display: inline-block;
+  display: block;
   margin: 0;
   padding: 0;
+  margin-left: 22px;
   padding-top: 14px;
   padding-bottom: 14px;
   text-align: center;
@@ -451,7 +479,7 @@ main {
 .catalog-item__link,
 .about-company__link,
 .accordion-tabs__link {
-  display: inline-block;
+  display: block;
   background-color: #ee3643;
   color: #ffffff;
   font-size: 14px;
@@ -488,27 +516,23 @@ main {
 }
 
 .content-header {
+  display: flex;
+  align-items: center;
+  align-content: center;
   min-height: 89px;
   background-color: #f9f5f0;
   text-transform: uppercase;
 }
 
-main {
-  margin: 0;
-  padding: 0;
-  width: 940px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin: 0 auto;
-}
-
 .content-header__title {
   font-size: 30px;
-  line-height: 30px;
+
 }
 
 .content-header__link {
   width: 253px;
+  height: 38px;
+  padding: 0;
 }
 
 .breadcumbs__list {
