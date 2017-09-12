@@ -113,6 +113,10 @@ a {
   background-color: #ca2c37;
 }
 
+.top-header__link {
+  color: #ffffff;
+}
+
 .form-search {
   width: 270px;
   height: 42px;
@@ -149,15 +153,33 @@ a {
 .form-search__input:focus,
 .form-search__input:focus ~ .form-search__label {
   background-color: #fff;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 17px;
   color: #000;
   outline: none;
   fill: #ee3643;
 }
 
-.form-search__input::-webkit-input-placeholder {color:#fff;}
-.form-search__input::-moz-placeholder          {color:#fff;}
-.form-search__input:-moz-placeholder           {color:#fff;}
-.form-search__input:-ms-input-placeholder      {color:#fff;}
+.form-search__input::-webkit-input-placeholder {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 17px;
+  color:#fff;
+}
+.form-search__input::-moz-placeholder          {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 17px;
+  color:#fff;
+}
+.form-search__input:-moz-placeholder           {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 17px;
+  color:#fff;
+}
+.form-search__input:-ms-input-placeholder      {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 17px;
+  color:#fff;
+}
 
 .price-menu, .user-menu,
 .main-menu, .catalog-list,
