@@ -383,6 +383,7 @@ main {
 
 .promo-content {
   padding-top: 60px;
+  padding-bottom: 53px;
   display: flex;
 }
 
@@ -520,19 +521,24 @@ main {
   align-items: center;
   align-content: center;
   min-height: 89px;
+  margin-bottom: 20px;
   background-color: #f9f5f0;
   text-transform: uppercase;
 }
 
 .content-header__title {
   font-size: 30px;
-
+  margin-right: auto;
+  margin-left: 30px;
+  color: #32425c;
 }
 
 .content-header__link {
   width: 253px;
   height: 38px;
   padding: 0;
+  margin-right: 24px;
+  line-height: 40px;
 }
 
 .breadcumbs__list {
@@ -606,10 +612,13 @@ main {
 
 .catalog-item:hover {
   box-shadow: 0 4px 10px 0px rgba(41, 52, 73, 0.5);
-
 }
 
+
+
 .catalog-item__title {
+  padding: 0;
+  margin: 0;
   font-size: 18px;
   line-height: 20px;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -619,6 +628,7 @@ main {
 
 .catalog-item__old-price,
 .catalog-item__link {
+
   padding-left: 17px;
   font-size: 17px;
   font-family: "PT Sans", "Arial", sans-serif;
