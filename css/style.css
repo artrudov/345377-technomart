@@ -926,12 +926,19 @@ main {
 
 .footer-list {
   list-style: none;
-  display: flex;
-  flex-direction: row;
+
 }
 
 .footer-list__item {
 
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+}
+
+.footer-list__link {
+  display: block;
+  width: 36px;
+  height: 36px;
 }
 
 .popular-manufacturers {
