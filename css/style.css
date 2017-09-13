@@ -419,13 +419,11 @@ a {
 main {
   margin: 0;
   padding: 0;
-  width: 940px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin: 0 auto;
 }
 
 .promo-content {
+  width: 940px;
+  margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 53px;
   display: flex;
@@ -455,8 +453,8 @@ main {
   background-color: #3bbce3;
   background-image: url("../img/icons/icon-2.svg");
   background-repeat: no-repeat;
-  background-size: 61px 75px;
-  background-position: 197px 31px;
+  background-size: 75px 79px;
+  background-position: 197px 23px;
 }
 
 .promo-item__technics {
@@ -486,7 +484,7 @@ main {
 .promo-item__title {
   margin: 0;
   padding: 0;
-  padding-top: 26px;
+  padding-top: 30px;
   padding-left: 22px;
   padding-bottom:20px;
   font-size: 24px;
@@ -495,8 +493,22 @@ main {
   color: #ffffff;
 }
 
-.promo-item__link,
-.promo-carousel__link,
+.promo-item__link {
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-left: 25px;
+  margin-top: 2px;
+  height: 38px;
+  text-align: center;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+
 .content-header__link,
 .catalog-item__link,
 .about-company__link {
@@ -527,7 +539,6 @@ main {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.promo-carousel__link,
 .content-header__link,
 .catalog-item__link,
 .about-company__link,
@@ -552,24 +563,6 @@ main {
   position: relative;
 }
 
-.promo-carousel__title {
-  position: absolute;
-  top:26px;
-  left: 11px;
-}
-
-.promo-carousel__text {
-  position: absolute;
-  top: 56px;
-  left: 11px;
-}
-
-.promo-carousel__link {
-  position: absolute;
-  bottom: 22px;
-  left: 11px;
-}
-
 .promo-carousel__control {
   position: relative;
   width: 100%;
@@ -579,8 +572,8 @@ main {
 
 .promo-carousel__control_left {
   position: absolute;
-  top: 114px;
-  left:25px;
+  top: 112px;
+  left:20px;
   border: 0;
   background: transparent;
   cursor: pointer;
@@ -588,8 +581,8 @@ main {
 
 .promo-carousel__control_right {
   position: absolute;
-  top: 114px;
-  right: 25px;
+  top: 112px;
+  right: 14px;
   border: 0;
   background: transparent;
   cursor: pointer;
@@ -597,8 +590,8 @@ main {
 
 .promo-carousel__badge_center {
   position: absolute;
-  bottom:30px;
-  left: 50%;
+  bottom: 52px;
+  left: 297px;
 }
 
 .promo-carousel__badge {
@@ -618,9 +611,30 @@ main {
   background-color: #ffffff;
 }
 
+.promo-carousel__link {
+  display: block;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  bottom: 25px;
+  left: 27px;
+  width: 195px;
+  height: 38px;
+  background-color: #ee3643;
+  text-align: center;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
 .promo-carousel__title {
   margin: 0;
   padding: 0;
+  position: absolute;
+  top:25px;
+  left: 23px;
   font-size: 36px;
   line-height: 30px;
   font-weight: bold;
@@ -631,16 +645,19 @@ main {
 .promo-carousel__text {
   margin: 0;
   padding: 0;
+  position: absolute;
+  top: 59px;
+  left: 25px;
   font-size: 18px;
   line-height: 24px;
   font-family: "PT Sans", "Arial", sans-serif;
   color: #ffffff;
 }
-
-.promo-carousel__link {
-  display: inline-block;
-  text-align: center;
-  width: 195px;
+.popular-items {
+    margin: 0;
+    padding: 0;
+    width: 940px;
+    margin: 0 auto;
 }
 
 .content-header {
@@ -807,6 +824,13 @@ main {
 
 }
 
+.popular-manufacturers {
+    margin: 0;
+    padding: 0;
+    width: 940px;
+    margin: 0 auto;
+}
+
 .manufacturers-list {
   display: flex;
   flex-direction: row;
@@ -839,6 +863,10 @@ main {
 }
 
 .services {
+  margin: 0;
+  padding: 0;
+  width: 940px;
+  margin: 0 auto;
   padding-top: 67px;
 }
 
@@ -942,6 +970,13 @@ main {
     font-size: 13px;
     line-height: 24px;
     font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.about-company {
+  margin: 0;
+  padding: 0;
+  width: 940px;
+  margin: 0 auto;
 }
 
 .our-company__description,
