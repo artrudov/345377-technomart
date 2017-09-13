@@ -533,6 +533,81 @@ main {
   border-radius: 3px;
 }
 
+.promo-carousel {
+  position: relative;
+  margin-top: -16px;
+}
+
+.promo-carousel__slide {
+  position: relative;
+}
+
+.promo-carousel__title {
+  position: absolute;
+  top:26px;
+  left: 11px;
+}
+
+.promo-carousel__text {
+  position: absolute;
+  top: 56px;
+  left: 11px;
+}
+
+.promo-carousel__link {
+  position: absolute;
+  bottom: 22px;
+  left: 11px;
+}
+
+.promo-carousel__control {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+
+}
+
+.promo-carousel__control_left {
+  position: absolute;
+  top: 114px;
+  left:25px;
+  font-size: 65px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.promo-carousel__control_right {
+  position: absolute;
+  top: 114px;
+  right: 25px;
+  font-size: 65px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.promo-carousel__badge_center {
+  position: absolute;
+  bottom:30px;
+  left: 50%;
+}
+
+.promo-carousel__badge {
+  display: inline-block;
+  height: 13px;
+  width: 13px;
+  padding: 0;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.promo-carousel__badge:hover,
+.promo-carousel__badge_active {
+  background-color: #ffffff;
+}
+
 .promo-carousel__title {
   margin: 0;
   padding: 0;

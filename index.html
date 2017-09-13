@@ -97,13 +97,13 @@
         инструменты для ремонта</h1>
 
       <section class="promo-content">
-        <div class="promo-content__column promo-content__column_position_left">
+
+      <div class="promo-content__column promo-content__column_position_left">
 
           <div class="promo-item promo-item__material new">
             <h2 class="promo-item__title">Материалы</h2>
             <a href="#" class="promo-item__link">На любой вкус</a>
           </div>
-
           <div class="promo-item promo-item__tool">
             <h2 class="promo-item__title">Инструмент</h2>
             <a href="#" class="promo-item__link">На все случаи</a>
@@ -111,45 +111,29 @@
 
           <div class="promo-carousel">
 
-            <div class="carousel-tabs">
-              <input id="carousel-tabs__1" type="radio" name="promo-carousel-tab"
-              checked="checked" />
-              <label for="carousel-tabs__1">
-                Первый слайд
-              </label>
-              <input id="carousel-tabs__2" type="radio" name="promo-carousel-tab" />
-              <label for="carousel-tabs__2">
-                Второй слайд
-              </label>
-
-            <div class="promo-carousel">
-              <div id="promo-carousel__1">
-                <div class="promo-carousel__description">
-                  <h2 class="promo-carousel__title">Перфораторы</h2>
-                  <p class="promo-carousel__text">Настоящие мужские игрушки</p>
-                  <a href="#" class="promo-carousel__link">Открыть каталог</a>
-                </div>
-                <div class="promo-carousel__picture">
-                  <img src="img/slider-item-bosch_1.jpg" width="620"
-                  height="266" alt="Первый слайд" class="promo-carousel__image">
-                </div>
-              </div>
-
-              <div id="promo-carousel__2">
-                <div class="promo-carousel__description">
-                  <h2 class="promo-carousel__title">Дрели</h2>
-                  <p class="promo-carousel__text">Соседям на радость</p>
-                  <a href="#" class="promo-carousel__link">Открыть каталог</a>
-                </div>
-                <div class="promo-carousel__picture">
-                  <img src="img/slider-item-bosch_2.jpg" width="620"
-                  height="266" alt="Второй слайд" class="promo-carousel__image">
-                </div>
-              </div>
+            <div class="promo-carousel__slide">
+              <img src="img/slider-item-bosch_1.jpg">
+              <h2 class="promo-carousel__title">Перфораторы</h2>
+              <p class="promo-carousel__text">Настоящие мужские игрушки</p>
+              <a href="#" class="promo-carousel__link">Открыть каталог</a>
             </div>
-          </div>
+
+            <div class="promo-carousel__slide">
+              <img src="img/slider-item-bosch_2.jpg">
+              <h2 class="promo-carousel__title">Дрели</h2>
+              <p class="promo-carousel__text">Соседям на радость</p>
+              <a href="#" class="promo-carousel__link">Открыть каталог</a>
+            </div>
+
+              <div class="promo-carousel__control_left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+              <div class="promo-carousel__control_right  w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+              <div class="promo-carousel__badge_center">
+                <span class="promo-carousel__badge" onclick="currentDiv(1)"></span>
+                <span class="promo-carousel__badge" onclick="currentDiv(2)"></span>
+              </div>
+
+            </div>
         </div>
-      </div>
 
         <div class="promo-content__column promo-content__column_position promo-content__column_position_right">
 
@@ -428,6 +412,36 @@
     </footer>
 
     <script>
+    //Слайдер
+    var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function currentDiv(n) {
+    showDivs(slideIndex = n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("promo-carousel__slide");
+    var dots = document.getElementsByClassName("demo");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+       dots[i].className = dots[i].className.replace(" w3-white", "");
+    }
+    x[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " w3-white";
+  }
+
+
+    //Переключение сервисов
     function openTabs(evt, tabsName) {
       var i, x, tablinks;
       x = document.getElementsByClassName("accordion-content__item");
@@ -440,8 +454,7 @@
       }
       document.getElementById(tabsName).style.display = "block";
       evt.currentTarget.className += " accordion-label__active";
-    }
-    </script>
+    }    </script>
 
   </body>
 </html>
