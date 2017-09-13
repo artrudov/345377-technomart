@@ -895,6 +895,7 @@ main {
 }
 
 .footer-menu__item {
+  margin-top: 25px;
   margin-right: 60px;
 }
 
@@ -953,7 +954,8 @@ main {
 }
 
 .footer-bottom {
-  min-height: 105px;
+  padding-top: 35px;
+  padding-bottom: 30px;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -967,7 +969,6 @@ main {
 }
 
 .bottom-footer__social-button {
-  margin-right: 118px;
   font-size: 0;
 }
 
@@ -1017,15 +1018,22 @@ main {
   background-color: #ee3643;
 }
 
-.footer-feedback__mail,
-.footer-feedback__powered-by {
+.footer-feedback__mail {
   margin: 0;
   padding: 0;
   width: 140px;
 }
 
 .footer-feedback__mail {
-    margin-right: 40px;
+  margin-left: auto;
+  margin-right: 40px;
+
+}
+
+.footer-feedback__powered-by {
+  margin: 0;
+  padding: 0;
+  width: 100px;
 }
 
 .footer-feedback__mail-link:active,
