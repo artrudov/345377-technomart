@@ -73,7 +73,7 @@ a {
 
 .main-header {
   background-color: #f3f7f8;
-  min-height: 320px;
+  padding-bottom: 60px;
 }
 
 .container__header {
@@ -84,16 +84,17 @@ a {
   width: 100%;
 }
 
-.top-header,
-.middle-header {
+.top-header {
+  margin: 0 auto;
+  width: 940px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.top-header {
-  margin: 0 auto;
-  width: 940px;
+.middle-header {
+  display: flex;
+  flex-direction: row;
 }
 
 .top-header__logo {
@@ -134,12 +135,12 @@ a {
   margin-left: -4px;
 }
 
- .form-search__icon {
-   fill: rgba(255, 255, 255, 0.3);
-   padding-top: 12px;
-   padding-right: 10px;
-   padding-bottom: 13px;
-   padding-left: 17px;
+.form-search__icon {
+ fill: rgba(255, 255, 255, 0.3);
+ padding-top: 12px;
+ padding-right: 10px;
+ padding-bottom: 13px;
+ padding-left: 17px;
 }
 
 .form-search__input {
@@ -186,18 +187,12 @@ a {
   color:#fff;
 }
 
-.price-menu, .user-menu,
-.main-menu, .catalog-list,
-.manufacturers-list {
+.price-menu {
   padding: 0;
   margin: 0;
-  list-style: none;
-}
-
-.price-menu {
-  width: 450px;
   display: flex;
   flex-direction: row;
+  list-style: none;
 }
 
 .price-menu__item{
@@ -247,7 +242,6 @@ a {
 .price-menu__link {
   display: block;
   height: 42px;
-
   color: #fff;
 }
 
@@ -270,12 +264,14 @@ a {
   width: 940px;
   margin: 0 auto;
   padding-top: 46px;
-  padding-bottom: 44px;
+  padding-bottom: 39px;
 }
 
 .middle-header__description {
   margin: 0;
   width: 247px;
+  margin-top: 2px;
+  margin-left: 52px;
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
@@ -284,17 +280,20 @@ a {
 }
 
 .header-contact {
-  width: 300px;
+  width: 270px;
+  margin-left: 20px;
+  margin-right: auto;
 }
 
 .header-contact__phone {
   margin: 0;
+  box-sizing: border-box;
   position: relative;
   width: 270px;
   padding-top: 11px;
   padding-bottom: 12px;
+  padding-left: 70px;
   border: 3px solid #ffffff;
-  text-align: center;
   font-size: 21px;
   line-height: 18px;
   font-style: normal;
@@ -315,11 +314,18 @@ a {
 
 .header-contact__address {
   margin: 0;
+  padding-left: 9px;
+  padding-top: 2px;
   font-size: 14px;
   line-height: 24px;
+  font-family: "Cuprum", "Arial", sans-serif;
+  color: #32425c;
 }
 
 .user-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -381,6 +387,10 @@ a {
 }
 
 .main-menu {
+  padding: 0;
+  margin: 0;
+  padding: 0 19px;
+  list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -390,7 +400,7 @@ a {
   display: block;
   height: 55px;
   font-size: 17px;
-  line-height: 60px;
+  line-height: 57px;
   color: #ffffff;
   height: 55px;
   padding-left: 30px;
@@ -714,6 +724,13 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.catalog-list,
+.manufacturers-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .catalog-item {

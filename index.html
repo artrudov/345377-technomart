@@ -45,8 +45,8 @@
           Контактная информация и авторизация на Техномарт</h2>
 
         <p class="middle-header__description">
-          Интернет-магазин строительных материалов и инструментов для
-          ремонта</p>
+          Интернет-магазин<br>
+          строительных материалов и инструментов для ремонта</p>
         <address class="header-contact">
           <p class="header-contact__phone">
             +7 (812) 555-05-55</p>
@@ -435,17 +435,17 @@
   function showDivs(n) {
     var i;
     var x = document.getElementsByClassName("promo-carousel__slide");
-    var dots = document.getElementsByClassName("demo");
+    var dots = document.getElementsByClassName("promo-carousel__badge");
     if (n > x.length) {slideIndex = 1}
     if (n < 1) {slideIndex = x.length}
     for (i = 0; i < x.length; i++) {
        x[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
-       dots[i].className = dots[i].className.replace(" w3-white", "");
+       dots[i].className = dots[i].className.replace(" promo-carousel__badge", "");
     }
     x[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " w3-white";
+    dots[slideIndex-1].className += " promo-carousel__badge";
   }
 
 
