@@ -746,6 +746,10 @@ main {
   background-color: #f4f8fa;
 }
 
+.services {
+  padding-top: 67px;
+}
+
 .custom-header__title {
   font-size: 30px;
   line-height: 24px;
@@ -753,39 +757,101 @@ main {
 }
 
 .custom-header__desctiption {
+  padding: 0;
+  margin: 0;
   width: 400px;
   line-height: 24px;
   font-family: "PT Sans", "Arial", sans-serif;
 }
 
+.accordion-tabs {
+  display: flex;
+  margin-top: 76px;
+
+}
+
 .accordion-label {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-right: 80px;
+  position: relative;
 }
 
-.accordion-label__description {
+.accordion-label::before{
+  position: absolute;
+  right: 0;
+  top: -40px;
+  content: "";
+  width: 10px;
+  height: 272px;
+  background-image: url("../img/tabs-shadow.png");
+  background-repeat: no-repeat;
+}
+
+.accordion-label__btn {
   display: block;
   width: 217px;
-  padding-top: 19px;
-  padding-bottom: 21px;
+  height: 62px;
   padding-left: 23px;
   font-size: 21px;
+  text-align: left;
   line-height: 30px;
+  border: none;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #ffffff;
   background-color: #32425c;
+  outline: 1;
 }
 
-.accordion-label__description:hover {
+.accordion-label__btn:hover {
+  color: #ffffff;
   background-color: #293449;
 }
 
-.accordion-tabs__title {
+.accordion-label__active {
+  background-color: #ffffff;
+  color: #32425c;
+}
+
+.accordion-content__title {
+  padding: 0;
+  margin: 0;
   font-size: 36px;
   line-height: 24px;
   color: #32425c;
   text-transform:  uppercase;
 }
 
-.accordion-tabs__text,
+.accordion-content__item {
+  width: 640px;
+  height: 290px;
+}
+.accordion-content__delivery {
+  background-image: url("../img/services-delivery.png");
+  background-repeat: no-repeat;
+  background-position: 174px 6px;
+}
+
+.accordion-content__guarantee {
+  background-image: url("../img/services-guarantee.png");
+  background-repeat: no-repeat;
+  background-position: 174px 6px;
+}
+
+.accordion-content__credit {
+  background-image: url("../img/services-credit.png");
+  background-repeat: no-repeat;
+  background-position: 174px 6px;
+}
+
+.accordion-content__text {
+    width: 275px;
+    font-size: 13px;
+    line-height: 24px;
+    font-family: "PT Sans", "Arial", sans-serif;
+}
+
 .our-company__description,
 .company-contacts__description {
   font-size: 13px;

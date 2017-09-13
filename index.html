@@ -209,7 +209,7 @@
 
         <section class="popular-manufacturers">
           <header class="content-header">
-            <h2 class="content-header__title content-header__title_opacity">
+            <h2 class="content-header__title">
               Популярные производители:</h2>
             <a href="" class="content-header__link">Все производители</a>
           </header>
@@ -265,6 +265,8 @@
           </ul>
         </section>
 
+
+
         <div class="container container__services container_breadth-full">
           <section class="services">
             <header class="custom-header">
@@ -275,68 +277,51 @@
             </header>
 
             <div class="accordion-tabs">
-              <input id="accordion-tabs__1" type="radio" name="accordion-tab" checked="checked" />
-              <input id="accordion-tabs__2" type="radio" name="accordion-tab" />
+              <ul class="accordion-label">
+                 <li class="accordion-label__item">
+                   <button class="tablink accordion-label__active accordion-label__btn" onclick="openTabs(event,'delivery')">Доставка</button>
+                 </li class="accordion-label__item">
+                 <li class="accordion-label__item">
+                   <button class="tablink accordion-label__btn" onclick="openTabs(event,'guarantee')">Гарантия</button>
+                 </li>
+                 <li class="accordion-label__item">
+                   <button class="tablink accordion-label__btn" onclick="openTabs(event,'credit')">Кредит</button>
+                 </li>
+              </ul>
 
-              <input id="accordion-tabs__3" type="radio" name="accordion-tab" />
+              <div class="accordion-content">
 
-            <ul class="accordion-label">
-              <li class="accordion-label__item">
-                <label for="accordion-tabs__1" class="accordion-label__description">Доставка</label>
-              </li>
-              <li class="accordion-label__item">
-                <label for="accordion-tabs__2" class="accordion-label__description">Гарантия</label>
-              </li>
-              <li class="accordion-label__item">
-                <label for="accordion-tabs__3" class="accordion-label__description">Кредит</label>
-              </li>
-            </ul>
-          </div>
+               <div id="delivery" class="accordion-content__item accordion-content__delivery">
+                 <h3 class="accordion-content__title">Доставка</h3>
+                 <p class="accordion-content__text">
+                   Мы с удовольствием доставим Ваш товар прямо к Вашему подъезду
+                   совершено бесплатно! Ведь мы неплохо заработаем, поднимая его на
+                   Ваш этаж!
+                 </p>
+               </div>
 
-            <div class="accordion-tabs_cont">
+               <div id="guarantee" class="accordion-content__item accordion-content__guarantee" style="display:none">
+                 <h3 class="accordion-content__title">Гарантия</h3>
+                 <p class="accordion-content__text">
+                   Если купленный у нас товар поломается или заискрит, а также
+                   в случае пожара, спровоцированного его возгаранием, Вы всегда
+                   можете быть уверены в нашей гарантии. Мы обменяем сгоревший
+                   товар на новый.<br>
+                   Дом восстановите как-нибудь сами.
+                 </p>
+               </div>
 
-              <div id="services-tab_1">
-                <div class="accordion-tabs__delivery">
-                  <h3 class="accordion-tabs__title">Доставка</h3>
-                  <p class="accordion-tabs__text">
-                    Мы с удовольствием доставим Ваш товар прямо к Вашему подъезду
-                    совершено бесплатно! Ведь мы неплохо заработаем, поднимая его на
-                    Ваш этаж!
-                  </p>
-                  <img src="img/services-delivery.png" width="468"
-                  height="261" alt="Услуга доставки" class="accordion-tabs__image/">
-                </div>
+               <div id="credit" class="accordion-content__item accordion-content__credit" style="display:none">
+                   <h3 class="accordion-content__title">Кредит</h3>
+                   <p class="accordion-content__text">
+                     Залезть в долговую яму стало проще!<br>
+                     Кредитные консультанты придут Вам на помощь.
+                   </p>
+                   <a href="#" class="accordion-tabs__link">Отправить заявку</a>
+               </div>
+
               </div>
-
-            <div id="services-tab_2">
-              <div class="accordion-tabs__guarantee">
-                <h3 class="accordion-tabs__title">Гарантия</h3>
-                <p class="accordion-tabs__text">
-                  Если купленный у нас товар поломается или заискрит, а также
-                  в случае пожара, спровоцированного его возгаранием, Вы всегда
-                  можете быть уверены в нашей гарантии. Мы обменяем сгоревший
-                  товар на новый.<br>
-                  Дом восстановите как-нибудь сами.
-                </p>
-                <img src="img/services-guarantee.png" width="389"
-                height="283" alt="Гарантии" class="accordion-tabs__image"/>
-              </div>
-            </div>
-
-              <div id="services-tab_3">
-                <div class="accordion-tabs__credit">
-                  <h3 class="accordion-tabs__title">Кредит</h3>
-                  <p class="accordion-tabs__text">
-                    Залезть в долговую яму стало проще!<br>
-                    Кредитные консультанты придут Вам на помощь.
-                  </p>
-                  <a href="#" class="accordion-tabs__link">Отправить заявку</a>
-                  <img src="img/services-credit.png" width="465"
-                  height="285" alt="Кредитование" class="accordion-tabs__image">
-                </div>
-              </div>
-
-            </div>
+           </div>
 
           </section>
         </div>
@@ -438,10 +423,25 @@
             <p class="footer-feedback__powered-by">Разработано -
               <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-feedback__link">
                 htmlacademy.ru</a></p>
-
         </section>
-
+      </div>
     </footer>
+
+    <script>
+    function openTabs(evt, tabsName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("accordion-content__item");
+      for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" accordion-label__active", "");
+      }
+      document.getElementById(tabsName).style.display = "block";
+      evt.currentTarget.className += " accordion-label__active";
+    }
+    </script>
 
   </body>
 </html>
