@@ -510,7 +510,6 @@ main {
 
 
 .content-header__link,
-.catalog-item__link,
 .about-company__link {
   display: block;
   margin: 0;
@@ -540,7 +539,6 @@ main {
 }
 
 .content-header__link,
-.catalog-item__link,
 .about-company__link,
 .accordion-tabs__link {
   display: block;
@@ -737,24 +735,23 @@ main {
 
 .catalog-list {
   display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.catalog-list,
-.manufacturers-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
 .catalog-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
   padding: 0 20px;
   margin-bottom: 20px;
   flex-basis: 180px;
   min-height: 318px;
-  align-items: center;
   border: 1px solid #eaeaea;
   text-align: center;
 }
@@ -764,14 +761,14 @@ main {
 }
 
 .catalog-item__image {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  margin-bottom: 45px;
+
 }
 
 .catalog-item__title {
   padding: 0;
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 12px;
   font-size: 18px;
   line-height: 20px;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -779,8 +776,12 @@ main {
   color: #000000;
 }
 
-.catalog-item__old-price,
-.catalog-item__link {
+.not-discont {
+  margin-bottom: 40px;
+}
+
+.catalog-item__old-price {
+  margin-bottom: 11px;
   font-size: 17px;
   font-family: "PT Sans", "Arial", sans-serif;
   line-height: 18px;
@@ -789,11 +790,23 @@ main {
 
 .catalog-item__link {
   display: block;
-  margin-top: 13px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  padding-left: 14px;
+  margin-left: -18px;
+  margin-bottom: 22px;
   position: relative;
-  width: 100px;
-  padding-left: 17px;
+  width: 122px;
+  height: 38px;
   color: #ffffff;
+  font-size: 17px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  line-height: 35px;
+  text-align: center;
+  background-color: #ee3643;
+  text-transform: uppercase;
+  border-radius: 3px;
 }
 
 .catalog-item__link::before {
@@ -803,8 +816,8 @@ main {
   height: 0;
   position: absolute;
   top: 0px;
-  right: -22px;
-  border: 23px solid transparent;
+  right: -18px;
+  border: 19px solid transparent;
   border-left-color: #ee3643;
   border-right: 0;
 }
@@ -828,9 +841,14 @@ main {
     padding: 0;
     width: 940px;
     margin: 0 auto;
+    padding-bottom: 58px;
 }
 
 .manufacturers-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -873,6 +891,9 @@ main {
   font-size: 30px;
   line-height: 24px;
   text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 30px;
 }
 
 .custom-header__desctiption {
@@ -885,8 +906,7 @@ main {
 
 .accordion-tabs {
   display: flex;
-  margin-top: 76px;
-
+  margin-top: 67px;
 }
 
 .accordion-label {
@@ -910,7 +930,7 @@ main {
 
 .accordion-label__btn {
   display: block;
-  width: 217px;
+  width: 242px;
   height: 62px;
   padding-left: 23px;
   font-size: 21px;
@@ -937,7 +957,7 @@ main {
   padding: 0;
   margin: 0;
   font-size: 36px;
-  line-height: 24px;
+  line-height: 33px;
   color: #32425c;
   text-transform:  uppercase;
 }
@@ -949,23 +969,24 @@ main {
 .accordion-content__delivery {
   background-image: url("../img/services-delivery.png");
   background-repeat: no-repeat;
-  background-position: 174px 6px;
+  background-position: 149px 25px;
 }
 
 .accordion-content__guarantee {
   background-image: url("../img/services-guarantee.png");
   background-repeat: no-repeat;
-  background-position: 174px 6px;
+  background-position: 149px 25px;
 }
 
 .accordion-content__credit {
   background-image: url("../img/services-credit.png");
   background-repeat: no-repeat;
-  background-position: 174px 6px;
+  background-position: 149px 25px;
 }
 
 .accordion-content__text {
     width: 275px;
+    margin-top: 29px;
     font-size: 13px;
     line-height: 24px;
     font-family: "PT Sans", "Arial", sans-serif;
@@ -1014,7 +1035,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 85px;
+  padding-top: 78px;
   padding-bottom: 85px;
   min-width: 370px;
 }
@@ -1025,12 +1046,6 @@ main {
 
 .company-contacts {
   flex-basis: 300px;
-}
-
-.custom-header__title {
-  padding: 0;
-  margin: 0;
-  padding-bottom: 40px;
 }
 
 .our-company__description {
