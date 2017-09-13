@@ -571,8 +571,8 @@ main {
   position: absolute;
   top: 114px;
   left:25px;
-  font-size: 65px;
-  color: #ffffff;
+  border: 0;
+  background: transparent;
   cursor: pointer;
 }
 
@@ -580,8 +580,8 @@ main {
   position: absolute;
   top: 114px;
   right: 25px;
-  font-size: 65px;
-  color: #ffffff;
+  border: 0;
+  background: transparent;
   cursor: pointer;
 }
 
