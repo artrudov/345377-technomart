@@ -126,54 +126,56 @@
 
             <form method="get" name="filter" class="filter__form">
 
-              <fieldset>
-              <legend  class="filter__title">Цена:</legend>
+              <fieldset class="filter__fieldset">
+              <legend  class="filter__subtitle filter__subtitle_first">Цена:</legend>
 
-              <div class="filter-slider">
-                <input type="range" name="range-price" value="0">
+              <div class="filter-interval__slider">
+                <div class="filter-interval__slide-line"></div>
+                <div class="filter-interval__slide-line_active"></div>
+                <div class="filter-interval__slider-badge filter-interval__slider-badge_left"></div>
+                <div class=" filter-interval__slider-badge filter-interval__slider-badge_right"></div>
               </div>
 
               <div class="filter-interval">
-                <label for="min-price">
-                  <input type="text" name="min-price" id="min-price">
-                </label>
-                <label for="max-price">
-                  <input type="text" name="max-price" id="max-price">
-                </label>
+
+                <input type="text" name="min-price" id="min-price" class="filter-interval__price">
+                <div class="filter-interval__separator"></div>
+                <input type="text" name="max-price" id="max-price" class="filter-interval__price filter-interval__price_right">
+
               </div>
 
               </fieldset>
-              <fieldset>
+              <fieldset class="filter__fieldset">
+                <legend  class="filter__subtitle">Производители:</legend>
 
-                <legend  class="filter__manufactured">Производители:</legend>
-                <label for="bosch" class="filter__label">
-                  <input type="checkbox"  id="bosch" name="manufactured" value="BOSCH">BOSCH
-                </label>
-                <label for="interscol" class="filter__label">
-                  <input type="checkbox" name="manufactured" id="interscol" value="ИНТЕРСКОЛ">ИНТЕРСКОЛ
-                </label>
-                <label for="makita" class="filter__label">
-                  <input type="checkbox" name="manufactured" id="makita" value="MAKITA">MAKITA
-                </label>
-                <label for="dewalt" class="filter__label">
-                  <input type="checkbox" name="manufactured" id="dewalt" value="DEWALT">DEWALT
-                </label>
-                <label for="hitachi" class="filter__label">
-                  <input type="checkbox" name="manufactured" id="hitachi" value="HITACHI">HITACHI
-                </label>
+                <input type="checkbox"  id="bosch" name="manufactured" value="BOSCH" checked>
+                <label for="bosch" class="filter__label">BOSCH</label>
+
+                <input type="checkbox" name="manufactured" id="interscol" value="ИНТЕРСКОЛ">
+                <label for="interscol" class="filter__label">ИНТЕРСКОЛ</label>
+
+                <input type="checkbox" name="manufactured" id="makita" value="MAKITA">
+                <label for="makita" class="filter__label">MAKITA</label>
+
+                <input type="checkbox" name="manufactured" id="dewalt" value="DEWALT">
+                <label for="dewalt" class="filter__label">DEWALT</label>
+
+                <input type="checkbox" name="manufactured" id="hitachi" value="HITACHI">
+                <label for="hitachi" class="filter__label">HITACHI</label>
               </fieldset>
 
-              <fieldset>
-              <legend  class="catalog-feed-title">Питание:</legend>
-              <label for="feed-batery" class="filter__label">
-                <input type="radio" name="feed" id="feed-batery" value="battery">Аккумуляторные
-              </label>
-              <label for="feed-net" class="filter__label">
-                <input type="radio" name="feed" id="feed-net" value="network">Сетевые
-              </label>
+              <fieldset class="filter__fieldset">
+                <legend  class="filter__subtitle">Питание:</legend>
 
-              <button>Показать</button>
+                <input type="radio" name="feed" id="feed-batery" value="battery" checked>
+                <label for="feed-batery" class="filter__label">Аккумуляторные</label>
+
+                <input type="radio" name="feed" id="feed-net" value="network">
+                <label for="feed-net" class="filter__label">Сетевые</label>
+
               </fieldset>
+
+              <button class="filter__button">Показать</button>
             </form>
           </div>
 
