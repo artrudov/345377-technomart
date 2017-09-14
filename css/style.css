@@ -922,23 +922,74 @@ main {
 
 .catalog-footer {
   width: 300px;
+  padding-bottom: 60px;
 }
 
 .footer-list {
+  padding: 0;
+  margin: 0;
   list-style: none;
-
 }
 
 .footer-list__item {
+  display: inline-block;
+  text-align: center;
+  margin-right: 10px;
 
-  border: 1px solid #e5e5e5;
-  border-radius: 3px;
 }
 
 .footer-list__link {
   display: block;
-  width: 36px;
   height: 36px;
+  width: 36px;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  font-size: 13px;
+  line-height: 35px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #000000;
+}
+
+.footer-list__next {
+  width: 138px;
+  margin-right: -10px;
+}
+
+.footer-list__link:hover,
+.footer-list__link:focus {
+  border-color: #bdc6ca;
+}
+
+
+.footer-list__link:active {
+  border-color: #ee3643;
+}
+
+.description-catalog {
+  margin: 0;
+  padding: 0;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.description-catalog__title {
+  padding: 0;
+  margin: 0;
+  padding-top: 68px;
+  padding-bottom: 40px;
+  font-size: 30px;
+  line-height: 24px;
+  color: #000000;
+  font-family: "Cuprum", "Arial", sans-serif;
+}
+
+.description-catalog__content {
+  padding: 0;
+  margin: 0;
+  padding-bottom: 73px;
+  font-size: 13px;
+  line-height: 24px;
+  padding-bottom: 40px;
 }
 
 .popular-manufacturers {
