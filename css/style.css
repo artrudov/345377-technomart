@@ -216,20 +216,22 @@ a {
 }
 
 .middle-header__description {
+  padding: 0;
   margin: 0;
-  width: 247px;
+  width: 177px;
   margin-top: 2px;
   margin-left: 52px;
   font-size: 16px;
   line-height: 23px;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #ee3643;
+  white-space: normal;
   font-style: italic;
-  font-weight: normal;
 }
 
 .header-contact {
   width: 270px;
-  margin-left: 20px;
+  margin-left: 92px;
   margin-right: auto;
 }
 
@@ -237,15 +239,15 @@ a {
   margin: 0;
   box-sizing: border-box;
   position: relative;
-  width: 270px;
+  width: 269px;
+  height: 46px;
   padding-top: 11px;
-  padding-bottom: 12px;
   padding-left: 70px;
   border: 3px solid #ffffff;
   font-size: 21px;
   line-height: 18px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   color: #ee3643;
 }
 
@@ -268,6 +270,7 @@ a {
   line-height: 24px;
   font-family: "Cuprum", "Arial", sans-serif;
   color: #32425c;
+  font-style: normal;
 }
 
 .user-menu {
@@ -372,7 +375,7 @@ main {
 .promo-content {
   width: 940px;
   margin: 0 auto;
-  padding-top: 60px;
+  padding-top: 59px;
   padding-bottom: 32px;
   display: flex;
 }
@@ -388,6 +391,12 @@ main {
   flex-wrap: wrap;
 }
 
+.new-mark {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .promo-item__material {
   margin-right: 20px;
   background-color: #ffbf47;
@@ -395,6 +404,7 @@ main {
   background-repeat: no-repeat;
   background-size: 44px 65px;
   background-position: 213px 31px;
+  position: relative;
 }
 
 .promo-item__tool {
@@ -437,7 +447,8 @@ main {
   padding-bottom:20px;
   font-size: 24px;
   line-height: 9px;
-  font-weight: bold;
+  font-weight: 300;
+  letter-spacing: 0.8px;
   color: #ffffff;
 }
 
@@ -952,6 +963,10 @@ input[type="radio"]:checked + .filter__label::before {
   min-height: 318px;
   border: 1px solid #eaeaea;
   text-align: center;
+}
+
+.catalog-item_new {
+  position: relative;
 }
 
 .catalog-item:hover {
