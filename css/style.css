@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cuprum|PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,400i,700,700i&subset=cyrillic');
 
 body {
   margin: 0;
@@ -218,9 +218,9 @@ a {
 .middle-header__description {
   padding: 0;
   margin: 0;
-  width: 177px;
+  width: 192px;
   margin-top: 2px;
-  margin-left: 52px;
+  margin-left: 53px;
   font-size: 16px;
   line-height: 23px;
   font-family: "Cuprum", "Arial", sans-serif;
@@ -231,7 +231,7 @@ a {
 
 .header-contact {
   width: 270px;
-  margin-left: 92px;
+  margin-left: 76px;
   margin-right: auto;
 }
 
@@ -247,7 +247,7 @@ a {
   font-size: 21px;
   line-height: 18px;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   color: #ee3643;
 }
 
