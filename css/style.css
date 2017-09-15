@@ -231,7 +231,7 @@ a {
 
 .header-contact {
   width: 270px;
-  margin-left: 76px;
+  margin-left: 75px;
   margin-right: auto;
 }
 
@@ -239,15 +239,16 @@ a {
   margin: 0;
   box-sizing: border-box;
   position: relative;
-  width: 269px;
-  height: 46px;
+  width: 270px;
+  height: 45px;
   padding-top: 11px;
-  padding-left: 70px;
+  padding-left: 71px;
   border: 3px solid #ffffff;
   font-size: 21px;
   line-height: 18px;
   font-style: normal;
   font-weight: bold;
+  letter-spacing: -0.4px;
   color: #ee3643;
 }
 
@@ -265,12 +266,14 @@ a {
 .header-contact__address {
   margin: 0;
   padding-left: 9px;
-  padding-top: 2px;
+  padding-top: 4px;
   font-size: 14px;
   line-height: 24px;
   font-family: "Cuprum", "Arial", sans-serif;
-  color: #32425c;
   font-style: normal;
+  font-weight: bold;
+  letter-spacing: -0.3px;
+  color: #32425c;
 }
 
 .user-menu {
@@ -340,7 +343,7 @@ a {
 .main-menu {
   padding: 0;
   margin: 0;
-  padding: 0 19px;
+  padding: 0 21px;
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -447,8 +450,7 @@ main {
   padding-bottom:20px;
   font-size: 24px;
   line-height: 9px;
-  font-weight: 300;
-  letter-spacing: 0.8px;
+  font-weight: bold;
   color: #ffffff;
 }
 
@@ -456,8 +458,8 @@ main {
   display: block;
   margin: 0;
   padding: 0;
-  margin-left: 25px;
-  margin-top: 2px;
+  margin-left: 26px;
+  margin-top: 3px;
   height: 38px;
   text-align: center;
   border-radius: 3px;
@@ -467,6 +469,9 @@ main {
   color: #ffffff;
 }
 
+.promo-content__column_position_right .promo-item__link {
+  margin-left: 23px;
+}
 
 .content-header__link,
 .about-company__link {
@@ -580,7 +585,8 @@ main {
   text-align: center;
   border-radius: 3px;
   font-size: 14px;
-  line-height: 34px;
+  line-height: 36px;
+  letter-spacing: 0.1px;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -630,6 +636,7 @@ main {
   font-size: 30px;
   margin-right: auto;
   margin-left: 30px;
+  font-weight: normal;
   color: #32425c;
 }
 
@@ -957,10 +964,10 @@ input[type="radio"]:checked + .filter__label::before {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 15px;
   margin-bottom: 20px;
-  flex-basis: 180px;
-  min-height: 318px;
+  flex-basis: 188px;
+  min-height: 316px;
   border: 1px solid #eaeaea;
   text-align: center;
 }
@@ -981,7 +988,7 @@ input[type="radio"]:checked + .filter__label::before {
 .catalog-item__title {
   padding: 0;
   margin: 0;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   font-size: 18px;
   line-height: 20px;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -998,6 +1005,7 @@ input[type="radio"]:checked + .filter__label::before {
   font-size: 17px;
   font-family: "PT Sans", "Arial", sans-serif;
   line-height: 18px;
+  font-weight: bold;
   color: #a9a9a9;
 }
 
@@ -1006,20 +1014,21 @@ input[type="radio"]:checked + .filter__label::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  padding-left: 14px;
-  margin-left: -18px;
-  margin-bottom: 22px;
-  position: relative;
   width: 122px;
   height: 38px;
-  color: #ffffff;
+  padding-left: 14px;
+  margin-left: -11px;
+  margin-bottom: 19px;
+  border-radius: 3px;
+  background-color: #ee3643;
+  position: relative;
+  text-align: center;
   font-size: 17px;
   font-family: "PT Sans", "Arial", sans-serif;
-  line-height: 35px;
-  text-align: center;
-  background-color: #ee3643;
+  font-weight: bold;
+  line-height: 36px;
+  color: #ffffff;
   text-transform: uppercase;
-  border-radius: 3px;
 }
 
 .catalog-item__link::before {
@@ -1111,14 +1120,17 @@ input[type="radio"]:checked + .filter__label::before {
     padding: 0;
     width: 940px;
     margin: 0 auto;
-    padding-bottom: 58px;
+    padding-bottom: 65px;
+}
+
+.popular-manufacturers .content-header__title {
+  margin-left: 25px;
 }
 
 .manufacturers-list {
   padding: 0;
   margin: 0;
   list-style: none;
-
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1129,8 +1141,8 @@ input[type="radio"]:checked + .filter__label::before {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-basis: 220px;
-  height: 145px;
+  flex-basis: 218px;
+  min-height: 143px;
   border: 1px solid #ebebeb;
   margin-bottom: 20px;
 }
@@ -1154,22 +1166,23 @@ input[type="radio"]:checked + .filter__label::before {
   padding: 0;
   width: 940px;
   margin: 0 auto;
-  padding-top: 67px;
+  padding-top: 68px;
 }
 
 .custom-header__title {
-  font-size: 30px;
+  font-size: 29px;
   line-height: 24px;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
-  padding-bottom: 30px;
+  padding-bottom: 29px;
 }
 
 .custom-header__desctiption {
   padding: 0;
   margin: 0;
   width: 400px;
+  font-size: 13px;
   line-height: 24px;
   font-family: "PT Sans", "Arial", sans-serif;
 }
@@ -1200,16 +1213,19 @@ input[type="radio"]:checked + .filter__label::before {
 
 .accordion-label__btn {
   display: block;
-  width: 242px;
-  height: 62px;
+  width: 239px;
+  height: 61px;
   padding-left: 23px;
-  font-size: 21px;
-  text-align: left;
-  line-height: 30px;
   border: none;
+  border-bottom: 1px solid #4d637b;
+  background-color: #32425c;
+  text-align: left;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 30px;
   font-family: "Cuprum", "Arial", sans-serif;
   color: #ffffff;
-  background-color: #32425c;
+
   outline: 1;
 }
 
@@ -1226,20 +1242,22 @@ input[type="radio"]:checked + .filter__label::before {
 .accordion-content__title {
   padding: 0;
   margin: 0;
+  padding-bottom: 28px;
   font-size: 36px;
   line-height: 33px;
   color: #32425c;
+  letter-spacing: -0.3px;
   text-transform:  uppercase;
 }
 
 .accordion-content__item {
   width: 640px;
-  height: 290px;
+  min-height: 286px;
 }
 .accordion-content__delivery {
   background-image: url("../img/services-delivery.png");
   background-repeat: no-repeat;
-  background-position: 149px 25px;
+  background-position: 152px 25px;
 }
 
 .accordion-content__guarantee {
@@ -1256,10 +1274,14 @@ input[type="radio"]:checked + .filter__label::before {
 
 .accordion-content__text {
     width: 275px;
-    margin-top: 29px;
+    margin: 0;
     font-size: 13px;
     line-height: 24px;
     font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.accordion-content__text_short {
+  width: 228px;
 }
 
 .about-company {
@@ -1305,7 +1327,7 @@ input[type="radio"]:checked + .filter__label::before {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 78px;
+  padding-top: 82px;
   padding-bottom: 85px;
   min-width: 370px;
 }
