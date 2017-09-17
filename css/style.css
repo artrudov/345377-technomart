@@ -647,38 +647,52 @@ main {
   line-height: 40px;
 }
 
-.breadcumbs__list {
+.breadcumbs {
   width: 940px;
-  margin: 12px auto;
+  margin: 0 auto;
+}
+
+.breadcumbs__list {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: row;
-  padding: 0;
-  list-style-image: url("../img/icons/icon-right-small.svg");
+  min-width: 340px;
+  list-style: none;
 }
 
 .breadcumbs__item {
-  margin-left: 15px;
-  margin-right: 15px;
+  position: relative;
+  margin-right: 42px;
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
 }
-/*КАКАЯ-ТО ЕРЕСЬ! С ХЛЕБНЫМИ КРОШКАМИ*/
-.breadcumbs__item:first-child{
-  padding: 0;
-  margin-left: 0;
-  list-style: none;
+
+.breadcumbs__item::before {
+  position: absolute;
+  content: "";
+  top: 23px;
+  left: -24px;
+  width: 7px;
+  height: 12px;
+  background-image: url("../img/icons/icon-right-small.svg");
+  background-repeat: no-repeat;
 }
 
 .breadcumbs__link {
-  margin-left: 15px;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
   color: #000000;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .breadcumbs__home {
-  margin-left: 0;
+  position: static;
+  padding-top: 1px;
+  margin-left: -2px;
 }
 
 .container__row {
@@ -695,9 +709,9 @@ main {
 }
 
 .catalog__header {
-  padding-top: 33px;
-  padding-bottom: 35px;
-  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 29px;
+  padding-left: 28px;
   background-color: #f2f6f8;
 }
 
@@ -705,6 +719,7 @@ main {
   margin: 0;
   font-size: 30px;
   line-height: 30px;
+  font-weight: normal;
   color: #32425c;
   text-transform: uppercase;
 }
@@ -724,6 +739,7 @@ main {
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: normal;
   text-transform: uppercase;
 }
 
@@ -896,17 +912,26 @@ input[type="radio"]:checked + .filter__label::before {
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   padding-left: 18px;
+  font-weight: normal;
 }
 
 .sort-price {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   list-style: none;
   width: 460px;
-  text-align: right;
 }
 
 .sort-price__item {
-  display: inline-block;
-  margin-right: 46px;
+  margin-right: auto;
+}
+
+.sort-price__item:nth-child(2),
+.sort-price__item:nth-child(3) {
+  margin-left: 25px;
+
 }
 
 .sort-price__item:nth-child(n+4) {
