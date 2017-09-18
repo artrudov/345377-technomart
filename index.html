@@ -196,7 +196,7 @@
             width="127" height="112" class="catalog-item__image_bfg2000">
             <h3 class="catalog-item__title not-discont">Перфоратор BOSCH BFG 2000</h3>
             <a class="catalog-item__link" href="#">12500 Р.</a>
-            <img src="img/new.png" width="60" height="60" alt="Новое" class="new-mark">
+            <img src="img/new.png" width="60" height="59" alt="Новое" class="new-mark">
           </li>
         </ul>
       </section>
@@ -424,50 +424,39 @@
       </div>
     </footer>
 
-    <script>
-    //Слайдер
-    var slideIndex = 1;
-  showDivs(slideIndex);
+    <section class="modal modal-feedback">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
 
-  function plusDivs(n) {
-    showDivs(slideIndex += n);
-  }
+      <form class="modal-feedback__form" action="https://echo.htmlacademy.ru" method="post">
 
-  function currentDiv(n) {
-    showDivs(slideIndex = n);
-  }
+        <p class="modal-feedback__block modal-feedback__block_name">
+          <label class="modal-feedback__label modal-feedback__label_name" for="user-name">Ваше имя:</label>
+          <input class="modal-feedback__name-user" id="user-name" type="text" name="name" placeholder="Предстватесь, пожалуйста">
+        </p>
+        <p class="modal-feedback__block modal-feedback__block_email">
+          <label class="modal-feedback__label modal-feedback__label_email" for="user-email">Ваш e-mail:</label>
+          <input class="modal-feedback__email-user" id="user-email" type="text" name="e-mail" placeholder="Для отправки ответа">
+        </p>
+        <p class="modal-feedback__block modal-feedback__block_textform">
+          <label class="modal-feedback__label modal-feedback__label_textform" for="user-textform">Текст письма:</label>
+          <textarea class="modal-feedback__textform-user" id="user-textform" name="textform" placeholder="В свободной форме"></textarea>
+        </p>
+        <div class="modal-feedback__block_button">
+          <button class="modal-feedback__button-submit" type="submit">Отправить</button>
+        </div>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
 
-  function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("promo-carousel__slide");
-    var dots = document.getElementsByClassName("promo-carousel__badge");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length}
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-       dots[i].className = dots[i].className.replace(" promo-carousel__badge", "");
-    }
-    x[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " promo-carousel__badge";
-  }
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <div class="modal-map__block">
+        <img src="img/full-map.jpg" width="940" height="449" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </div>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
 
 
-    //Переключение сервисов
-    function openTabs(evt, tabsName) {
-      var i, x, tablinks;
-      x = document.getElementsByClassName("accordion-content__item");
-      for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablink");
-      for (i = 0; i < x.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" accordion-label__active", "");
-      }
-      document.getElementById(tabsName).style.display = "block";
-      evt.currentTarget.className += " accordion-label__active";
-    }    </script>
-
+    <script src="js/script.js"></script>
   </body>
 </html>
