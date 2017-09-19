@@ -57,11 +57,11 @@
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </address>
         <ul class="user-menu">
-          <li class="user-menu__item user-menu__log-in">
-            <a href="#" class="user-menu__link ">Войти</a>
+          <li class="user-menu__item">
+            <a href="#" class="user-menu__link user-menu__log-in">Войти</a>
           </li>
-          <li class="user-menu__item user-menu__registration" >
-            <a href="#" class="user-menu__link ">Регистрация</a>
+          <li class="user-menu__item" >
+            <a href="#" class="user-menu__link user-menu__registration">Регистрация</a>
           </li>
         </ul>
       </section>
@@ -348,8 +348,10 @@
               <h2 class="custom-header__title">Контакты</h2>
             </header>
             <p class="company-contacts__description">Вы можете забрать товар сами, заехав в наш офис:</p>
-            <img src="img/map.jpg" alt="Карта с местоположением" width="300" height="158" class="company-contacts__map">
-            <a href="#" class="company-contacts__link">Заблудились? Напишите нам!</a>
+              <a href="map.html" class="company-contacts__map">
+                <img src="img/map.jpg" alt="Карта с местоположением" width="300" height="158">
+              </a>
+            <a href="feedback.html" class="company-contacts__link">Заблудились? Напишите нам!</a>
           </section>
         </section>
 
