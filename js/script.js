@@ -1,3 +1,4 @@
+
 //Форма обратной связи
   var link = document.querySelector(".company-contacts__link");
 
@@ -48,6 +49,8 @@
     }
   });
 
+
+
   //Слайдер
     var slideIndex = 1;
     showDivs(slideIndex);
@@ -92,9 +95,8 @@
     evt.currentTarget.className += " accordion-label__active";
   }
 
-
   //Уведомление о добавленном в корзину товаре
-    var offerLink = document.querySelector(".company-contacts__map");
+    var offerLink = document.querySelector(".catalog-item__buy");
 
     var cartPopup = document.querySelector(".modal-cart");
     var cartClose = cartPopup.querySelector(".modal-close");
