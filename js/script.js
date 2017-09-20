@@ -99,17 +99,21 @@
 
   //Уведомление о добавленном в корзину товаре
 
-  var offerLink = document.querySelector(".catalog-item__buy");
+  var offerLink = document.getElementsByClassName("catalog-item__buy");
 
   var cartPopup = document.querySelector(".modal-cart");
   if (cartPopup) {
     var cartClose = cartPopup.querySelector(".modal-close");
   }
 
-  offerLink.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    cartPopup.classList.add("modal-show");
-  });
+  for (var i = 0; i < offerLink.length; i++) {
+    offerLink[i].preventDefault;
+    offerLink[i].num = i;
+    offerLink[i].addEventListener('click', function (evt) {
+      evt.preventDefault();
+      cartPopup.classList.add("modal-show");
+    });
+  }
 
   cartClose.addEventListener("click", function (evt) {
     evt.preventDefault();
