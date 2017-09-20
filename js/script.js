@@ -12,19 +12,22 @@
     }
 
     function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("promo-carousel__slide");
-    var dots = document.getElementsByClassName("promo-carousel__badge");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length}
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-       dots[i].className = dots[i].className.replace(" promo-carousel__badge", "");
-    }
-    x[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " promo-carousel__badge";
+      var i;
+      var x = document.getElementsByClassName("promo-carousel__slide");
+      var dots = document.getElementsByClassName("promo-carousel__badge");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+         dots[i].className = dots[i].className.replace(" promo-carousel__badge", "");
+      }
+      if (x.length > 0) {
+        x[slideIndex-1].style.display = "block";
+
+      dots[slideIndex-1].className += " promo-carousel__badge";
+      }
     }
 
 
@@ -50,25 +53,27 @@
   if (popup) {
     var close = popup.querySelector(".modal-close");
   }
-  link.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.add("modal-show");
-  });
+  if (link.length > 0) {
+    link.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.add("modal-show");
+    });
 
-  close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal-show");
-    popup.classList.remove("modal-error");
-  });
+    close.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.remove("modal-show");
+      popup.classList.remove("modal-error");
+    });
 
-  window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      if (popup.classList.contains("modal-show")) {
-        popup.classList.remove("modal-show");
-        popup.classList.remove("modal-error");
+    window.addEventListener("keydown", function (evt) {
+      if (evt.keyCode === 27) {
+        if (popup.classList.contains("modal-show")) {
+          popup.classList.remove("modal-show");
+          popup.classList.remove("modal-error");
+        }
       }
-    }
-  });
+    });
+  }
 
   //Карта
   var mapLink = document.querySelector(".company-contacts__map");
