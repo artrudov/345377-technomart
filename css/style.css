@@ -622,25 +622,27 @@ a {
 
 .promo-carousel__badge_center {
   position: absolute;
-  bottom: 52px;
-  left: 297px;
+  bottom: 54px;
+  left: 295px;
 }
 
 .promo-carousel__badge {
   display: inline-block;
-  height: 13px;
-  width: 13px;
+  height: 10px;
+  width: 10px;
+  margin-right: 7px;
   padding: 0;
   color: #ffffff;
-  background-color: transparent;
-  border: 1px solid #ccc;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
 }
 
 .promo-carousel__badge:hover,
 .promo-carousel__badge_active {
-  background-color: #ffffff;
+  background: #ee3643;
+  background-size: 6px 6px;
 }
 
 .promo-carousel__link {
@@ -1673,9 +1675,13 @@ input[type="radio"]:checked + .filter__label::before {
 }
 
 .footer-middle__address {
+  width: 330px;
   margin-right: auto;
   font-style: normal;
   padding-left: 3px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
 }
 
 .footer-middle__menu-item {
@@ -1688,12 +1694,6 @@ input[type="radio"]:checked + .filter__label::before {
 
 .footer-menu__link,
 .footer-middle__link {
-  font-size: 18px;
-  line-height: 24px;
-  color: #ffffff;
-}
-
-.footer-middle__address{
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;

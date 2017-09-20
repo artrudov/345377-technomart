@@ -1,14 +1,15 @@
 
   //Слайдер
     var slideIndex = 1;
+
     showDivs(slideIndex);
 
     function plusDivs(n) {
-    showDivs(slideIndex += n);
+      showDivs(slideIndex += n);
     }
 
     function currentDiv(n) {
-    showDivs(slideIndex = n);
+      showDivs(slideIndex = n);
     }
 
     function showDivs(n) {
@@ -21,12 +22,12 @@
          x[i].style.display = "none";
       }
       for (i = 0; i < dots.length; i++) {
-         dots[i].className = dots[i].className.replace(" promo-carousel__badge", "");
+         dots[i].className = dots[i].className.replace(" promo-carousel__badge_active", "");
       }
       if (x.length > 0) {
         x[slideIndex-1].style.display = "block";
 
-      dots[slideIndex-1].className += " promo-carousel__badge";
+      dots[slideIndex-1].className += " promo-carousel__badge_active";
       }
     }
 
