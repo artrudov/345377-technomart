@@ -53,7 +53,8 @@
   if (popup) {
     var close = popup.querySelector(".modal-close");
   }
-  if (link.length > 0) {
+
+  if (link) {
     link.addEventListener("click", function (evt) {
       evt.preventDefault();
       popup.classList.add("modal-show");
@@ -84,23 +85,26 @@
     var mapClose = mapPopup.querySelector(".modal-close");
   }
 
-  mapLink.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    mapPopup.classList.add("modal-show");
-  });
+  if (mapLink){
 
-  mapClose.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    mapPopup.classList.remove("modal-show");
-  });
+    mapLink.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      mapPopup.classList.add("modal-show");
+    });
 
-  window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      if (mapPopup.classList.contains("modal-show")) {
-        mapPopup.classList.remove("modal-show");
+    mapClose.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      mapPopup.classList.remove("modal-show");
+    });
+
+    window.addEventListener("keydown", function (evt) {
+      if (evt.keyCode === 27) {
+        if (mapPopup.classList.contains("modal-show")) {
+          mapPopup.classList.remove("modal-show");
+        }
       }
-    }
-  });
+    });
+}
 
   //Уведомление о добавленном в корзину товаре
 
