@@ -51,7 +51,7 @@ a {
   height: 42px;
   padding-left: 1px;
   margin-bottom: -5px;
-  background-color: #ee3643;
+  background-color: #ef3643;
   border-bottom: 5px solid #b52933;
   font-size: 24px;
   line-height: 46px;
@@ -117,7 +117,7 @@ a {
 }
 
 .form-search__input:focus ~ .form-search__label svg {
-  fill: #ee3643;
+  fill: #ef3643;
 }
 
 .form-search__input::-webkit-input-placeholder {
@@ -179,7 +179,7 @@ a {
 }
 
 .price-menu__cart_active {
-  background-color: #ee3643;
+  background-color: #ef3643;
   color: #ffffff;
 }
 
@@ -237,7 +237,7 @@ a {
   font-size: 16px;
   line-height: 23px;
   font-family: "Cuprum", "Arial", sans-serif;
-  color: #ee3643;
+  color: #ef3643;
   white-space: normal;
   font-style: italic;
 }
@@ -262,7 +262,7 @@ a {
   font-style: normal;
   font-weight: bold;
   letter-spacing: -0.4px;
-  color: #ee3643;
+  color: #ef3643;
 }
 
 .header-contact__phone::before {
@@ -403,7 +403,7 @@ a {
 }
 
 .user-menu__link:hover {
-  color: #ee3643;
+  color: #ef3643;
 }
 
 .user-menu__link:active {
@@ -577,7 +577,7 @@ a {
 .about-company__link,
 .accordion-tabs__link {
   display: block;
-  background-color: #ee3643;
+  background-color: #ef3643;
   color: #ffffff;
   font-size: 14px;
   line-height: 18px;
@@ -641,7 +641,7 @@ a {
 
 .promo-carousel__badge:hover,
 .promo-carousel__badge_active {
-  background: #ee3643;
+  background: #ef3643;
   background-size: 6px 6px;
 }
 
@@ -654,7 +654,7 @@ a {
   left: 27px;
   width: 195px;
   height: 38px;
-  background-color: #ee3643;
+  background-color: #ef3643;
   text-align: center;
   border-radius: 3px;
   font-size: 14px;
@@ -1029,7 +1029,7 @@ input[type="radio"]:checked + .filter__label::before {
   display: block;
   font-size: 13px;
   line-height: 18px;
-  border-bottom: 1px dashed #ee3643;
+  border-bottom: 1px dashed #ef3643;
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   color: #000000;
@@ -1051,7 +1051,7 @@ input[type="radio"]:checked + .filter__label::before {
 }
 
 .sort-price__link_active {
-  color: #ee3643;
+  color: #ef3643;
   opacity: 1;
   border: none;
 }
@@ -1205,7 +1205,7 @@ input[type="radio"]:checked + .filter__label::before {
   margin-left: -11px;
   margin-bottom: 19px;
   border-radius: 3px;
-  background-color: #ee3643;
+  background-color: #ef3643;
   position: relative;
   text-align: center;
   font-size: 17px;
@@ -1225,7 +1225,7 @@ input[type="radio"]:checked + .filter__label::before {
   top: 0px;
   right: -18px;
   border: 19px solid transparent;
-  border-left-color: #ee3643;
+  border-left-color: #ef3643;
   border-right: 0;
 }
 
@@ -1260,7 +1260,7 @@ input[type="radio"]:checked + .filter__label::before {
 }
 
 .footer-list__link_active {
-  background-color: #ee3643;
+  background-color: #ef3643;
   color: #ffffff;
 }
 
@@ -1277,7 +1277,7 @@ input[type="radio"]:checked + .filter__label::before {
 
 
 .footer-list__link:active {
-  border-color: #ee3643;
+  border-color: #ef3643;
 }
 
 .description-catalog {
@@ -1529,7 +1529,7 @@ input[type="radio"]:checked + .filter__label::before {
   position: absolute;
   top: 7px;
   left: -36px;
-  background-color: #ee3643;
+  background-color: #ef3643;
 }
 
 .about-company {
@@ -1566,7 +1566,7 @@ input[type="radio"]:checked + .filter__label::before {
 .about-company__link {
   display: block;
   width: 169px;
-  background-color: #ee3643;
+  background-color: #ef3643;
   color: #ffffff;
   font-size: 14px;
   line-height: 18px;
@@ -1580,7 +1580,7 @@ input[type="radio"]:checked + .filter__label::before {
 
 .company-contacts__link {
   display: block;
-  background-color: #ee3643;
+  background-color: #ef3643;
   color: #ffffff;
   font-size: 14px;
   line-height: 18px;
@@ -1634,7 +1634,7 @@ input[type="radio"]:checked + .filter__label::before {
 .footer-top__logo {
   width: 220px;
   margin-right: auto;
-  background-color: #ee3643;
+  background-color: #ef3643;
   border-bottom: 5px solid #b52933;
   font-size: 30px;
   line-height: 13px;
@@ -1792,7 +1792,7 @@ input[type="radio"]:checked + .filter__label::before {
 .bottom-footer__vk-icon:focus,
 .bottom-footer__facebook-icon:focus,
 .bottom-footer__twitter-icon:focus {
-  background-color: #ee3643;
+  background-color: #ef3643;
 }
 
 .footer-feedback__mail {
@@ -1818,7 +1818,7 @@ input[type="radio"]:checked + .filter__label::before {
 .footer-feedback__link:active,
 .footer-feedback__mail-link:focus,
 .footer-feedback__link:focus {
-  color: #ee3643;
+  color: #ef3643;
 }
 
 .modal {
@@ -1856,7 +1856,7 @@ input[type="radio"]:checked + .filter__label::before {
   left: 0px;
   width: 26px;
   height: 4px;
-  background-color: #ee3643;
+  background-color: #ef3643;
 }
 
 .modal-close::before {
@@ -1954,7 +1954,7 @@ input[type="radio"]:checked + .filter__label::before {
   padding: 12px 0;
   border: none;
   border-radius: 3px;
-  background-color: #ee3643;
+  background-color: #ef3643;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -2044,7 +2044,7 @@ input[type="radio"]:checked + .filter__label::before {
 
 .modal-cart__button-offer {
   margin-right: 20px;
-  background-color: #ee3643;
+  background-color: #ef3643;
   color: #ffffff;
 }
 
