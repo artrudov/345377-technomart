@@ -28,13 +28,10 @@ a {
   background-color: #293449;
 }
 
-.container_breadth-full {
-  width: 100%;
-}
 
 .top-header {
   margin: 0 auto;
-  width: 940px;
+  max-width: 940px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -222,7 +219,7 @@ a {
 }
 
 .middle-header {
-  width: 940px;
+  max-width: 940px;
   margin: 0 auto;
   padding-top: 46px;
   padding-bottom: 39px;
@@ -411,7 +408,7 @@ a {
 }
 
 .main-navigation {
-  width: 940px;
+  max-width: 940px;
   margin: 0 auto;
   background-color: #32425c;
   border-bottom: 5px solid #293449;
@@ -447,7 +444,7 @@ a {
 }
 
 .promo-content {
-  width: 940px;
+  max-width: 940px;
   margin: 0 auto;
   padding-top: 59px;
   padding-bottom: 32px;
@@ -691,7 +688,7 @@ a {
 .popular-items {
     margin: 0;
     padding: 0;
-    width: 940px;
+    max-width: 940px;
     margin: 0 auto;
 }
 
@@ -722,7 +719,7 @@ a {
 }
 
 .breadcumbs {
-  width: 940px;
+  max-width: 940px;
   margin: 0 auto;
 }
 
@@ -778,7 +775,7 @@ a {
 .catalog {
   margin: 0;
   padding: 0;
-  width: 940px;
+  max-width: 940px;
   margin: 0 auto;
 }
 
@@ -1283,7 +1280,7 @@ input[type="radio"]:checked + .filter__label::before {
 .description-catalog {
   margin: 0;
   padding: 0;
-  width: 940px;
+  max-width: 940px;
   margin: 0 auto;
   padding-bottom: 68px;
 }
@@ -1313,7 +1310,7 @@ input[type="radio"]:checked + .filter__label::before {
 .popular-manufacturers {
     margin: 0;
     padding: 0;
-    width: 940px;
+    max-width: 940px;
     margin: 0 auto;
     padding-bottom: 65px;
 }
@@ -1373,7 +1370,7 @@ input[type="radio"]:checked + .filter__label::before {
 .services {
   margin: 0;
   padding: 0;
-  width: 940px;
+  max-width: 940px;
   margin: 0 auto;
   padding-top: 68px;
 }
@@ -1496,7 +1493,7 @@ input[type="radio"]:checked + .filter__label::before {
 .about-company {
   margin: 0;
   padding: 0;
-  width: 940px;
+  max-width: 940px;
   margin: 0 auto;
 }
 
@@ -1627,7 +1624,7 @@ input[type="radio"]:checked + .filter__label::before {
 .footer-middle,
 .footer-bottom {
   display: flex;
-  width: 940px;
+  max-width: 940px;
   margin: 0 auto;
 }
 
@@ -1963,7 +1960,7 @@ input[type="radio"]:checked + .filter__label::before {
   display: none;
   top:120px;
   left:50%;
-  width: 940px;
+  max-width: 940px;
   margin-left: -470px;
   background-color: transparent;
 }
