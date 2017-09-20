@@ -1,7 +1,4 @@
 
-
-
-
   //Слайдер
     var slideIndex = 1;
     showDivs(slideIndex);
@@ -101,10 +98,10 @@
   });
 
   //Уведомление о добавленном в корзину товаре
-  var offerLink = document.querySelectorAll(".catalog-item__buy");
+
+  var offerLink = document.querySelector(".catalog-item__buy");
 
   var cartPopup = document.querySelector(".modal-cart");
-
   if (cartPopup) {
     var cartClose = cartPopup.querySelector(".modal-close");
   }
