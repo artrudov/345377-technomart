@@ -119,7 +119,7 @@
   for (var i = 0; i < offerLink.length; i++) {
     offerLink[i].preventDefault;
     offerLink[i].num = i;
-    offerLink[i].addEventListener('click', function (evt) {
+    offerLink[i].addEventListener("click", function (evt) {
       evt.preventDefault();
       cartPopup.classList.add("modal-show");
     });
