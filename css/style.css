@@ -1821,6 +1821,7 @@ input[type="radio"]:checked + .filter__label::before {
 .modal {
   position: fixed;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  z-index: 1;
 }
 
 .modal-feedback {
