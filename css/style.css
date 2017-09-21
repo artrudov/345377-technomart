@@ -1539,7 +1539,7 @@ input[type="radio"]:checked + .filter__label::before {
   flex-direction: row;
   justify-content: space-between;
   padding-top: 82px;
-  padding-bottom: 85px;
+  padding-bottom: 86px;
   min-width: 370px;
 }
 
@@ -1643,9 +1643,8 @@ input[type="radio"]:checked + .filter__label::before {
   color: #fff;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 27px;
-
-  padding-bottom: 24px;
+  padding-top: 20px;
+  padding-bottom: 22px;
   cursor: pointer;
 }
 
