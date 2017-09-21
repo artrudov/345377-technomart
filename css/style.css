@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,400i,700,700i&subset=cyrillic');
+@import url("https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,400i,700,700i&subset=cyrillic");
 
 body {
   margin: 0;
@@ -7,7 +7,7 @@ body {
   line-height: 125%;
   color: #000000;
   font-family: "Cuprum", "Arial", sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -257,7 +257,7 @@ a {
   font-size: 21px;
   line-height: 18px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   letter-spacing: -0.4px;
   color: #ef3643;
 }
@@ -281,7 +281,7 @@ a {
   line-height: 24px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   letter-spacing: -0.3px;
   color: #32425c;
 }
@@ -519,7 +519,7 @@ a {
   padding-bottom:20px;
   font-size: 24px;
   line-height: 9px;
-  font-weight: bold;
+  font-weight: 700;
   color: #ffffff;
 }
 
@@ -669,7 +669,7 @@ a {
   left: 23px;
   font-size: 36px;
   line-height: 30px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -705,8 +705,8 @@ a {
 .content-header__title {
   font-size: 30px;
   margin-right: auto;
-  margin-left: 30px;
-  font-weight: normal;
+  margin-left: 29px;
+  font-weight: 400;
   color: #32425c;
 }
 
@@ -757,7 +757,7 @@ a {
   padding-top: 20px;
   padding-bottom: 20px;
   color: #000000;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .breadcumbs__home {
@@ -790,7 +790,7 @@ a {
   margin: 0;
   font-size: 30px;
   line-height: 30px;
-  font-weight: normal;
+  font-weight: 400;
   color: #32425c;
   text-transform: uppercase;
 }
@@ -810,7 +810,7 @@ a {
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans", "Arial", sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -830,7 +830,7 @@ a {
   font-size: 17px;
   line-height: 9px;
   font-family: "PT Sans", "Arial", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -922,11 +922,15 @@ a {
   display: block;
   padding-bottom: 20px;
   padding-left: 33px;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 20px;
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.filter__label_feed {
+  font-size: 14px;
 }
 
 input[type="checkbox"] {
@@ -996,7 +1000,7 @@ input[type="radio"]:checked + .filter__label::before {
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   padding-left: 18px;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .sort-price {
@@ -1174,7 +1178,7 @@ input[type="radio"]:checked + .filter__label::before {
   font-size: 18px;
   line-height: 20px;
   font-family: "PT Sans", "Arial", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   color: #000000;
 }
 
@@ -1187,7 +1191,7 @@ input[type="radio"]:checked + .filter__label::before {
   font-size: 17px;
   font-family: "PT Sans", "Arial", sans-serif;
   line-height: 18px;
-  font-weight: bold;
+  font-weight: 700;
   color: #a9a9a9;
 }
 
@@ -1207,7 +1211,7 @@ input[type="radio"]:checked + .filter__label::before {
   text-align: center;
   font-size: 17px;
   font-family: "PT Sans", "Arial", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 36px;
   color: #ffffff;
   text-transform: uppercase;
@@ -1295,7 +1299,7 @@ input[type="radio"]:checked + .filter__label::before {
   color: #000000;
   font-family: "Cuprum", "Arial", sans-serif;
   text-transform: uppercase;
-  font-weight: normal;
+  font-weight: 400;
   letter-spacing: 0.2px;
 }
 
@@ -1376,12 +1380,13 @@ input[type="radio"]:checked + .filter__label::before {
 }
 
 .custom-header__title {
-  font-size: 29px;
+  font-size: 30px;
   line-height: 24px;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
   padding-bottom: 29px;
+  font-weight: 400;
 }
 
 .custom-header__desctiption {
@@ -1427,7 +1432,7 @@ input[type="radio"]:checked + .filter__label::before {
   background-color: #32425c;
   text-align: left;
   font-size: 21px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 30px;
   font-family: "Cuprum", "Arial", sans-serif;
   color: #ffffff;
@@ -1451,8 +1456,8 @@ input[type="radio"]:checked + .filter__label::before {
   padding-bottom: 28px;
   font-size: 36px;
   line-height: 33px;
+  font-weight: 400;
   color: #32425c;
-  letter-spacing: -0.3px;
   text-transform:  uppercase;
 }
 
