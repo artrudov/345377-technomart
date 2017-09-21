@@ -31,8 +31,7 @@ a {
 
 .top-header {
   margin: 0 auto;
-  max-width: 960px;
-  padding: 0 10px;
+  max-width: 940px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -221,8 +220,7 @@ a {
 }
 
 .middle-header {
-  max-width: 960px;
-  padding: 0 10px;
+  max-width: 940px;
   margin: 0 auto;
   padding-top: 46px;
   padding-bottom: 39px;
@@ -411,8 +409,7 @@ a {
 }
 
 .main-navigation {
-  max-width: 960px;
-  padding: 0 10px;
+  max-width: 940px;
   margin: 0 auto;
   background-color: #32425c;
   border-bottom: 5px solid #293449;
@@ -448,8 +445,7 @@ a {
 }
 
 .promo-content {
-  max-width: 960px;
-  padding: 0 10px;
+  max-width: 940px;
   margin: 0 auto;
   padding-top: 59px;
   padding-bottom: 32px;
@@ -700,9 +696,10 @@ a {
   color: #ffffff;
 }
 .popular-items {
-  max-width: 960px;
-  padding: 0 10px;
-  margin: 0 auto;
+    margin: 0;
+    padding: 0;
+    max-width: 940px;
+    margin: 0 auto;
 }
 
 .content-header {
@@ -740,8 +737,7 @@ a {
 }
 
 .breadcumbs {
-  max-width: 960px;
-  padding: 0 10px;
+  max-width: 940px;
   margin: 0 auto;
 }
 
@@ -795,8 +791,9 @@ a {
 }
 
 .catalog {
-  max-width: 960px;
-  padding: 0 10px;
+  margin: 0;
+  padding: 0;
+  max-width: 940px;
   margin: 0 auto;
 }
 
@@ -1322,8 +1319,9 @@ input:disabled + .filter__label{
 }
 
 .description-catalog {
-  max-width: 960px;
-  padding: 0 10px;
+  margin: 0;
+  padding: 0;
+  max-width: 940px;
   margin: 0 auto;
   padding-bottom: 68px;
 }
@@ -1351,10 +1349,11 @@ input:disabled + .filter__label{
 }
 
 .popular-manufacturers {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 10px;
-  padding-bottom: 65px;
+    margin: 0;
+    padding: 0;
+    max-width: 940px;
+    margin: 0 auto;
+    padding-bottom: 65px;
 }
 
 .popular-manufacturers .content-header__title {
@@ -1410,10 +1409,12 @@ input:disabled + .filter__label{
 }
 
 .services {
-  max-width: 960px;
+  margin: 0;
+
+  max-width: 940px;
   margin: 0 auto;
-  padding: 0 10px;
   padding-top: 68px;
+
 }
 
 .custom-header__title {
@@ -1532,9 +1533,10 @@ input:disabled + .filter__label{
 }
 
 .about-company {
-  max-width: 960px;
+  margin: 0;
+  padding: 0;
+  max-width: 940px;
   margin: 0 auto;
-  padding: 0 10px;
 }
 
 .our-company__description,
@@ -1678,8 +1680,7 @@ input:disabled + .filter__label{
 
 .footer-top {
   display: flex;
-  max-width: 960px;
-  padding: 0 10px;
+  max-width: 940px;
   margin: 0 auto;
 }
 
@@ -1722,8 +1723,7 @@ input:disabled + .filter__label{
 }
 
 .footer-middle {
-  max-width: 960px;
-  padding: 0 10px;
+  max-width: 940px;
   display: flex;
   margin: 0 auto;
   padding-top: 27px;
@@ -1777,8 +1777,7 @@ input:disabled + .filter__label{
 }
 
 .footer-bottom {
-  max-width: 960px;
-  padding: 0 10px;
+  max-width: 940px;
   display: flex;
   margin: 0 auto;
   padding-top: 35px;
