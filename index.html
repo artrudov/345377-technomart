@@ -7,18 +7,42 @@
   <body>
     <header class="main-header">
       <h2 class="visually-hidden">Основное меню</h2>
-      <div class="main-header__logo">
-        <img src="http://placehold.it/86x35">
-        <button class="main-header__button"></button>
-      </div>
-
-      <section class="main-header__content">
-        <h2 class="visually-hidden">Контактная информация и авторизация на Техномарт</h2>
-        <p>
-          Милые штуки ручной работы для дома
-        </p>
-      </section>
+      <nav class="main-navigation">
+        <div class="main-navigation__logo">
+          <img src="http://placehold.it/86x35" class="main-navigation__image">
+          <button class="main-navigation__button"></button>
+        </div>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item">
+            <a href="#" class="main-navigation__link">Каталог товаров</a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="#" class="main-navigation__link">Вязание на заказ</a>
+          </li>
+          <li class="main-navigation__item">
+            <form class="main-navigation__form">
+              <input type="search" id="search-input" class="main-navigation__input" placeholder="Поиск:" />
+              <label for="search-input" class="main-navigation__label">
+                <svg class="main-navigation__icon" xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19">
+                  <path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
+                </svg>
+              </label>
+            </form>
+          </li>
+          <li class="main-navigation__item">
+            <a href="#" class="main-navigation__link">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
     </header>
+
+    <section class="main-header__content">
+      <h1 class="visually-hidden">Интернет магазин "Мишка"</h1>
+      <p>
+        Милые штуки ручной работы для дома
+      </p>
+    </section>
+
 
     <main>
       <section>
@@ -26,6 +50,7 @@
           <li>Предметы интерьера</li>
           <li>Детские игрушки</li>
         </ul>
+
       </section>
 
 
