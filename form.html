@@ -48,18 +48,20 @@
         </p>
         <form method="get" action="https://echo.htmlacademy.ru" name="Order" class="main-form">
 
-          <fieldset class="main-form__block">
-            <legend class="main-form__title">Тип</legend>
+          <section class="main-form__block">
+            <h2 class="visually-hidden">Тип изделия</h2>
+            <p class="main-form__title">Тип</p>
 
             <input type="radio" name="Type" value="Аксессуар для интерьера" id="accessory" checked>
             <label for="accessory" class="main-form__label main-form__label_radio">Аксессуар для интерьера</label>
 
             <input type="radio" name="Type" value="Детская игрушка" id="children-toy">
             <label for="children-toy" class="main-form__label main-form__label_radio">Детская игрушка</label>
-          </fieldset>
+          </section>
 
-          <fieldset class="main-form__block">
-            <legend class="main-form__title">Цвет</legend>
+          <section class="main-form__block">
+            <h2 class="visually-hidden">Цвет изделия</h2>
+            <p class="main-form__title">Цвет</p>
 
             <input type="checkbox" name="Color" value="Белый" id="color_white" checked>
             <label for="color_white" class="main-form__label main-form__label_checkbox">Белый</label>
@@ -78,10 +80,11 @@
 
             <input type="checkbox" name="Color" value="Оранжевый" id="color_orange" class="main-form__input main-form__input_checkbox">
             <label for="color_orange" class="main-form__label main-form__label_checkbox">Оранжевый</label>
-          </fieldset>
+          </section>
 
-          <fieldset class="main-form__block">
-            <legend class="main-form__title">ФИО</legend>
+          <section class="main-form__block">
+            <h2 class="visually-hidden">Личные данные</h2>
+            <p class="main-form__title">ФИО</p>
 
             <label for="first-name" class="main-form__label">Имя</label>
             <input type="text" name="First-name" value="Введите ваше имя*" id="first-name">
@@ -91,28 +94,31 @@
 
             <label for="middle-name" class="main-form__label">Отчество</label>
             <input type="text" name="Middle-name" value="Отчество, если желаете" id="middle-name">
-          </fieldset>
+          </section>
 
-          <fieldset class="main-form__block">
-            <legend class="main-form__title">Тел</legend>
+          <section class="main-form__block">
+            <h2 class="visually-hidden">Ваш телефон</h2>
+            <p class="main-form__title">Тел</p>
 
             <label for="phone" class="main-form__label visually-hidden">Телефон</label>
             <input type="text" name="Phone number" value="+7 XXX XX XX*" id="phone">
-          </fieldset>
+          </section>
 
-          <fieldset class="main-form__block">
-            <legend class="main-form__title">E-Mail</legend>
+          <section class="main-form__block">
+            <h2 class="visually-hidden">Ваша электронная почта</h2>
+            <p class="main-form__title">E-Mail</p>
 
             <label for="email" class="main-form__label visually-hidden">E-Mail пользователя</label>
             <input type="text" name="E-mail" value="Ваш Email*" id="email">
-          </fieldset>
+          </section>
 
-          <fieldset class="main-form__block">
-            <legend class="main-form__title">Доп</legend>
+          <section class="main-form__block">
+            <h2 class="visually-hidden">Дополнительная информация</h2>
+            <p class="main-form__title">Доп</p>
 
             <label for="field" class="main-form__label visually-hidden">Дополнительная информация</label>
-            <textarea type="text" name="Text-field" id="field">Опишите все ваши пожелания к заказу</textarea>
-          </fieldset>
+            <textarea name="Text-field" id="field">Опишите все ваши пожелания к заказу</textarea>
+          </section>
 
           <p class="main-form__attention"> *Поля обязательны для заполнения</p>
 
@@ -125,27 +131,27 @@
 
     <footer class="main-footer">
       <section class="main-footer__social">
-        <h1 class="visually-hidden">Секция с ссылками на социальные сети</h1>
-        <ul class="main-footer__list">
-          <li class="main-footer__item">
-            <a href="https://www.instagram.com/" class="main-footer__link">
-              <img src="http://placehold.it/23x22"  alt="Instagram-icon" class="main-footer__image main-footer__image_instagram">
+        <h2 class="visually-hidden">Секция с ссылками на социальные сети</h2>
+        <ul class="social-icons">
+          <li class="social-icons__item">
+            <a href="https://www.instagram.com/" class="social-icons__link social-icons__link_instagram">
+              Instagram
             </a>
           </li>
-          <li class="main-footer__item">
-            <a href="https://ru-ru.facebook.com/" class="main-footer__link">
-              <img src="http://placehold.it/17x32" alt="Facebook-icon" class="main-footer__image main-footer__image_facebook">
+          <li class="social-icons__item">
+            <a href="https://ru-ru.facebook.com/" class="social-icons__link social-icons__link_facebook">
+              Facebook
             </a>
           </li>
-          <li class="main-footer__item">
-            <a href="https://twitter.com/" class="main-footer__link">
-              <img src="http://placehold.it/27x22" alt="Twitter-icon" class="main-footer__image main-footer__image_twiter">
+          <li class="social-icons__item">
+            <a href="https://twitter.com/" class="social-icons__link social-icons__link_twitter">
+              Twitter
             </a>
           </li>
         </ul>
       </section>
       <section class="main-footer__copyright">
-        <h1 class="visually-hidden">Секция с копирайтами</h1>
+        <h2 class="visually-hidden">Секция с копирайтами</h2>
         <p class="main-footer__description">
           <a href="https://htmlacademy.ru/intensive/adaptive" class="main-footer__link main-footer__link_copyright">Разработано</a>
         </p>
