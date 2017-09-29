@@ -44,18 +44,24 @@
     </header>
 
     <main>
-      <section class="promo">
-        <ul class="promo__list">
-          <li class="promo__item">
-            <a href="#" class="promo__link">Предметы интерьера</a>
+      <section class="features">
+        <header class="section-header visually-hidden">
+          <h2 class="section-header__title">Мы создаем</h2>
+        </header>
+        <ul class="features__list">
+          <li class="features__item">
+            <a href="#" class="features__link">Предметы интерьера</a>
           </li>
-          <li class="promo__item">
-            <a href="#" class="promo__link">Детские игрушки</a>
+          <li class="features__item">
+            <a href="#" class="features__link">Детские игрушки</a>
           </li>
         </ul>
-        <h2 class="promo__header">
-          Вязанные корзинки
-        </h2>
+      </section>
+
+      <section class="promo">
+        <header class="section-header">
+          <h2 class="section-header__title">Вязанные корзинки</h2>
+        </header>
         <p class="promo__alert">Товар недели</p>
         <p class="promo__description">
           Экологически чистая пряжа, ручная работа. Доступны в шести расцветках,
@@ -108,25 +114,25 @@
           <p class="feedback__autor-name">Анастасия Красильникова</p>
           <p class="feedback__autor-contact">@misssssiskras</p>
         </article>
-        <div class="feedback-control">
-          <button class="button button_left feedback-control__button">
+        <div class="feedback__control">
+          <button class="button button_left feedback__control feedback__control_button">
             Туда
           </button>
-          <button class="button button_right feedback-control__button ">
+          <button class="button button_right feedback__control feedback__control_button">
             Сюда
           </button>
-          <a href="#" class="button feedback-control__link">Написать</a>
+          <a href="#" class="button feedback__control feedback__control_link">Написать</a>
         </div>
       </section>
 
       <section class="contacts">
-        <header class="contacts-header">
-          <h2  class="contacts-header__title">Контакты</h2>
+        <header class="section-header">
+          <h2  class="section-header__title section-header__title_contacts">Контакты</h2>
         </header>
         <table class="contacts__table">
           <tr class="contacts__table-raw">
             <td class="contacts__table-cell">e-mail:</td>
-            <td class="contacts__table-cell">nfo@mimimishkashop.ru</td>
+            <td class="contacts__table-cell">info@mimimishkashop.ru</td>
           </tr>
           <tr class="contacts__table-raw">
             <td class="contacts__table-cell">адрес:</td>
@@ -135,10 +141,10 @@
             </td>
           </tr>
         </table>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.320894615906916!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xfbeb3cbd3eed50c8!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCAxMDEsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1506514368287" width="320" height="457" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe class="contacts__frame-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.320894615906916!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xfbeb3cbd3eed50c8!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCAxMDEsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1506514368287" width="320" height="457" frameborder="0" style="border:0" allowfullscreen></iframe>
         <img src="http://placehold.it/320x457" width="320" height="457" alt="Карта с указанием расположения организации" class="contacts__image" >
-        <footer class="contacts-footer">
-          <a href="#" class="button contacts-footer__link">Напишите нам</a>
+        <footer class="contacts__footer">
+          <a href="#" class="button contacts__button_link">Напишите нам</a>
         </footer>
       </section>
 

@@ -1,0 +1,10 @@
+.contacts__frame-map {
+  @include reset-indent;
+  position: absolute;
+}
+
+
+.contacts__table-cell {
+  @include reset-indent
+  @include main-font;
+}
