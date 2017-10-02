@@ -1,0 +1,17 @@
+body {
+  min-width: 320px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.button {
+  @include reset-indent;
+}
+
+.visually-hidden {
+  @include reset-indent;
+  font-size: 0;
+}
