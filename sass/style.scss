@@ -1,10 +1,12 @@
-/// Подключение Normalize
-@import "base/normalize";
-
 /// Подключение миксинов и переменных
 @import "utils/mixins";
 @import "utils/variables";
 @import "utils/functions";
+
+/// Подключение Normalize и базовых стилей
+@import "base/normalize";
+@import "base/scaffolding";
+@import "base/typography";
 
 // section-header и button надо куда-то деть
 

@@ -6,13 +6,24 @@
 }
 
 /// Основной шрифт
-@mixin main-font {
+@mixin main-font-regular ($size){
   font: {
-    size: 15px;
-    family: "OpenSans", "Arial", sans-serif;
+    size: $size;
+    family: "Open Sans", "Arial", sans-serif;
     weight: 400;
     style: normal;
   }
   line-height: 24px;
   color: #444444;
+}
+
+/// Волнистый разделитель секций
+@mixin background-wave {
+  background: {
+    // Исправить наименование файла
+    image: url("../img/zigzag-line-desktop.svg");
+    repeat: repeat-x;
+    size: 320px 7px;
+    position: bottom;
+  }
 }

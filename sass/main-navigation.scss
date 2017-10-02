@@ -1,0 +1,22 @@
+.main-navigation {
+  padding: {
+    top: 21px;
+    bottom:22px;
+  }
+  font-family: "Open Sans";
+  background-color: #ffffff;
+}
+
+.main-navigation__button {
+    display: block;
+    width: 20px;
+    height: 14px;
+    font-size: 0;
+    border: none;
+    background: {
+      image: url("../img/icon-menu-open.svg");
+      color: #ffffff;
+      size: 20px 14px;
+      repeat: no-repeat;
+  }
+}
