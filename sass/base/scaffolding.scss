@@ -1,4 +1,5 @@
 body {
+  @include reset-indent;
   min-width: 320px;
 }
 
@@ -14,4 +15,9 @@ img {
 .visually-hidden {
   @include reset-indent;
   font-size: 0;
+}
+
+.section-header__title {
+  @include reset-indent;
+  @include font-bold (25px, 400, normal, 30px, #000000);
 }

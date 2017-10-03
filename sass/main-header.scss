@@ -1,3 +1,13 @@
 .main-header {
   background-color: #fbfbfb;
 }
+
+.main-header__description {
+  @include reset-indent;
+}
+
+.main-header__caption {
+  position: absolute;
+  @include font-bold (27px, 400, normal, 30px, #010000)
+  margin-top: -80px;
+}

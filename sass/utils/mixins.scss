@@ -5,16 +5,35 @@
   margin: 0;
 }
 
-/// Основной шрифт
-@mixin main-font-regular ($size){
+/// Основной шрифты
+@mixin font-regular ($size, $weight, $style, $line, $color){
   font: {
     size: $size;
     family: "Open Sans", "Arial", sans-serif;
-    weight: 400;
-    style: normal;
+    weight: $weight;
+    style: $style;
   }
-  line-height: 24px;
-  color: #444444;
+  line-height: $line;
+  color: $color;
+}
+
+@mixin font-bold ($size, $weight, $style, $line, $color){
+  font: {
+    size: $size;
+    family: "Open Sans Bold", "Arial", sans-serif;
+    weight: $weight;
+    style: $style;
+  }
+  line-height: $line;
+  color: $color;
+}
+
+/// Примесь для установки внутренних отступов
+@mixin main-padding ($top, $right, $bottom, $left){
+  @if $top > 0 {padding-top: $top;}
+  @if $right > 0 {padding-right: $right;}
+  @if $bottom > 0 {padding-bottom: $bottom;}
+  @if $left > 0 {padding-left: $left;}
 }
 
 /// Волнистый разделитель секций

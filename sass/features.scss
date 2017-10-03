@@ -1,5 +1,6 @@
 .features {
-  background-color: #63d1bb;
+  width: 320px;
+  @include main-padding(0, 0, 34px, 0);
 }
 
 .features__list {
@@ -9,16 +10,15 @@
 
 .features__link {
   display: block;
-
-  padding: {
-    top: 30px;
-    bottom: 35px;
-  }
+  @include main-padding (30px, 30px, 34px, 30px);
+  @include font-bold (19px, 400, normal, 24px, #ffffff)
+  text-decoration: none;
 }
 
 .features__link--interior {
 
   background: {
+    color: #63d1bb;
     image: url("../img/icon-interior.svg");
     repeat: no-repeat;
     size: 40px 60px;
@@ -29,6 +29,7 @@
 .features__link--toys {
 
   background: {
+    color: #56c3b2;
     image: url("../img/icon-toy.svg");
     repeat: no-repeat;
     size: 60px 60px;

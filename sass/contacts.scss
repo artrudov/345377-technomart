@@ -6,5 +6,5 @@
 
 .contacts__table-cell {
   @include reset-indent
-  @include main-font-regular (15px);
+  // @include font-regular (15px);
 }
