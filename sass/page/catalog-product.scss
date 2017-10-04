@@ -1,0 +1,35 @@
+.catalog-product {
+
+}
+
+.catalog-product__link {
+  text-decoration: none;
+}
+
+.catalog-product__title {
+  @include reset-indent;
+  @include font-bold (17px, 400, normal, 24px, #000000);
+}
+
+.catalog-product__description {
+  @include reset-indent;
+  @include font-regular (13px, 400, normal, 30px, #444444);
+}
+
+.catalog-product__price {
+  @include reset-indent;
+  @include font-bold (15px, 400, normal, 24px, #000000);
+}
+
+.catalog-product__link--order {
+  display: block;
+  width: 20px;
+  height: 19px;
+  font-size: 0;
+
+  background: {
+    image: url("../img/icon-cart.svg");
+    size: 20px 19px;
+    repeat: no-repeat
+  }
+}

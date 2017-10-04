@@ -1,9 +1,5 @@
 .about {
-  padding: {
-    bottom: 51px;
-  }
-
-  @include background-wave;
+  @include main-padding (34px, 30px, 30px, 30px)
 }
 
 .about__list {

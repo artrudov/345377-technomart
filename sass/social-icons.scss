@@ -1,6 +1,7 @@
 .social-icons {
   @include reset-indent;
-  list-style: none;
+  @include main-padding (24px, 30px, 27px, 30px)
+   list-style: none;
 }
 
 .social-icons__item {

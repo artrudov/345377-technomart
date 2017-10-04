@@ -1,0 +1,39 @@
+.main-form__title {
+  @include font-bold (17px, 400, normal, 16px, #63d1bb);
+  text-transform: uppercase;
+}
+
+.main-form__label {
+  @include font-bold (17px, 400, normal, 18px, #000000);
+}
+
+.main-form__input::-webkit-input-placeholder {
+  @include font-regular (17px, 400, normal, 18px, #444444);
+}
+
+.main-form__input::-moz-placeholder {
+  @include font-regular (17px, 400, normal, 18px, #444444);
+}
+
+.main-form__input:-moz-placeholder {
+  @include font-regular (17px, 400, normal, 18px, #444444);
+}
+
+.main-form__input:-ms-input-placeholder {
+  @include font-regular (17px, 400, normal, 18px, #444444);
+}
+
+.main-form__input {
+  @include font-regular (17px, 400, normal, 18px, #444444);
+  opacity: 0.3;
+  size: 25;
+}
+
+.main-form__attention {
+  @include font-regular (14px, 400, normal, 16px, #444444);
+}
+
+.main-form__button {
+  @include font-bold (17px, 400, normal, 16px, #444444);
+  text-transform: uppercase;
+}

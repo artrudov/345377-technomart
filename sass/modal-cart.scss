@@ -1,0 +1,28 @@
+.modal-cart {
+  @include main-padding (37px, 30px, 47px, 30px);
+}
+
+.modal-cart__title {
+  @include reset-indent;
+  @include font-bold (25px, 400, normal, 30px, #000000);
+}
+
+.modal-cart__add-order {
+  @include font-regular (15px, 400, normal, 30px, #444444);
+}
+
+.modal-cart__size-list {
+  @include reset-indent;
+  list-style: none;
+}
+
+.modal-cart__size-item {
+  @include font-bold (17px, 400, normal, 16px, #444444);
+}
+
+.modal-cart__button {
+  @include main-padding (20px, 0, 20px, 0);
+  background-color: #63d1bb;
+  @include font-bold (17px, 400, normal, 16px, #ffffff);
+  text-transform: uppercase;
+}
