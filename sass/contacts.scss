@@ -8,7 +8,7 @@
 }
 
 .contacts__table-cell {
-  @include reset-indent
+  @include reset-indent;
   @include font-regular (15px, 400, normal, 30px, $content-color);
 }
 

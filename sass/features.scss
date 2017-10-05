@@ -1,5 +1,6 @@
 .features {
   width: 320px;
+
   @include main-padding(0, 0, 34px, 0);
 }
 
@@ -10,8 +11,9 @@
 
 .features__link {
   display: block;
+
   @include main-padding (30px, 30px, 34px, 30px);
-  @include font-bold (19px, 400, normal, 24px, $additional-color)
+  @include font-bold (19px, 400, normal, 24px, $additional-color);
   text-decoration: none;
 }
 

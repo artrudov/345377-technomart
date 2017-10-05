@@ -1,6 +1,7 @@
 .feedback {
-  @include main-padding (35px, 30px, 51px, 30px)
+  @include main-padding (35px, 30px, 51px, 30px);
   width: 260px;
+
   @include background-wave;
 }
 

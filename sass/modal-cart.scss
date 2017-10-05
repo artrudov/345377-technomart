@@ -23,6 +23,7 @@
 .modal-cart__button {
   @include main-padding (20px, 0, 20px, 0);
   background-color: #63d1bb;
+
   @include font-bold (17px, 400, normal, 16px, $additional-color);
   text-transform: uppercase;
 }

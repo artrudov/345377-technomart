@@ -10,6 +10,7 @@
 
 .main-navigation__link {
   display: block;
+
   @include main-padding( 31px, 0, 33px, 0);
   @include font-bold (17px, 400, normal, 24px, $header-color);
   text-decoration: none;
@@ -30,15 +31,15 @@
 }
 
 .main-navigation__button {
-    display: block;
-    width: 20px;
-    height: 14px;
-    font-size: 0;
-    border: none;
-    background: {
-      image: url("../img/icon-menu-open.svg");
-      color: #ffffff;
-      size: 20px 14px;
-      repeat: no-repeat;
+  display: block;
+  width: 20px;
+  height: 14px;
+  font-size: 0;
+  border: none;
+  background: {
+    image: url("../img/icon-menu-open.svg");
+    color: #ffffff;
+    size: 20px 14px;
+    repeat: no-repeat;
   }
 }

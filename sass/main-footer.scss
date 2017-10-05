@@ -3,12 +3,13 @@
 }
 
 .main-footer__copyright {
-  @include main-padding (29px, 30px, 36px, 30px)
+  @include main-padding (29px, 30px, 36px, 30px);
 }
 
 .main-footer__link--copyright {
   position: relative;
-  @include font-bold (19px, 400, normal, 18px, $header-color)
+
+  @include font-bold (19px, 400, normal, 18px, $header-color);
   text-decoration: none;
 
   &::before {
