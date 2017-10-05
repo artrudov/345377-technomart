@@ -1,0 +1,27 @@
+.main-footer {
+  background-color: #f1f1f1;
+}
+
+.main-footer__copyright {
+  @include main-padding (29px, 30px, 36px, 30px);
+}
+
+.main-footer__link--copyright {
+  position: relative;
+
+  @include font-bold (19px, 400, normal, 18px, $header-color);
+  text-decoration: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 34px;
+    right: -40px;
+
+    background: {
+      image: url("../img/logo-htmlacademy.svg");
+      repeat: no-repeat;
+    }
+  }
+}

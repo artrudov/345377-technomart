@@ -1,0 +1,30 @@
+/// Подключение Normalize
+@import "base/normalize";
+
+/// Подключение миксинов и переменных
+@import "utils/mixins";
+@import "utils/variables";
+@import "utils/functions";
+
+/// Подключение базовых стилей
+@import "base/scaffolding";
+@import "base/typography";
+
+/// Основные блоки разметки и элементы главной страницы
+@import "main-header";
+@import "main-navigation";
+@import "features";
+@import "promo";
+@import "about";
+@import "feedback";
+@import "contacts";
+@import "main-footer"; /// ????? может туда-же к section-header и button
+@import "social-icons";
+@import "modal-cart";
+
+///Внутреннии страницы (каталог, форма заказа)
+@import "page/catalog-section";
+@import "page/catalog-product";
+@import "page/manufacturing-procces";
+@import "page/form-section";
+@import "page/main-form";

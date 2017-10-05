@@ -1,0 +1,17 @@
+.catalog-section__header {
+  background-color: #f1f1f1;
+}
+
+.catalog-section__title {
+  @include main-padding (75px, 0, 81px);
+  @include font-bold (27px, 400, normal, 30px, $header-color);
+}
+
+.catalog-section__list {
+  @include reset-indent;
+  list-style: none;
+}
+
+.catalog-section__item {
+  padding-top: 30px;
+}

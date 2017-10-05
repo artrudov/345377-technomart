@@ -1,0 +1,27 @@
+body {
+  @include reset-indent;
+  // Подправить ширину
+  width: 320px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.button {
+  @include reset-indent;
+  border: none;
+  text-decoration: none;
+  background: none;
+}
+
+.visually-hidden {
+  @include reset-indent;
+  font-size: 0;
+}
+
+.section-header__title {
+  @include reset-indent;
+  @include font-bold (25px, 400, normal, 30px, #000000);
+}

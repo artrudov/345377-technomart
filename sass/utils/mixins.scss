@@ -1,0 +1,46 @@
+/// Сброс внешних и внутренних отступов
+@mixin reset-indent {
+  padding: 0;
+  margin: 0;
+}
+
+/// Основной шрифты
+@mixin font-regular ($size, $weight, $style, $line, $color) {
+  font: {
+    size: $size;
+    family: "Open Sans", "Arial", sans-serif;
+    weight: $weight;
+    style: $style;
+  }
+  line-height: $line;
+  color: $color;
+}
+
+@mixin font-bold ($size, $weight, $style, $line, $color) {
+  font: {
+    size: $size;
+    family: "Open Sans Bold", "Arial", sans-serif;
+    weight: $weight;
+    style: $style;
+  }
+  line-height: $line;
+  color: $color;
+}
+
+/// Примесь для установки внутренних отступов
+@mixin main-padding ($top, $right, $bottom: $top, $left: $right) {
+  padding-top: $top;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
+}
+
+/// Волнистый разделитель секций
+@mixin background-wave {
+  background: {
+    // Исправить наименование файла
+    repeat: repeat-x;
+    size: 320px 7px;
+    position: bottom;
+  }
+}

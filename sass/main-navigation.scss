@@ -1,0 +1,45 @@
+.main-navigation {
+  @include reset-indent;
+  background-color: #ffffff;
+}
+
+.main-navigation__list {
+  @include reset-indent;
+  list-style: none;
+}
+
+.main-navigation__link {
+  display: block;
+
+  @include main-padding( 31px, 0, 33px, 0);
+  @include font-bold (17px, 400, normal, 24px, $header-color);
+  text-decoration: none;
+  border-top: 1px solid #ececec;
+}
+
+.main-navigation__link--cart::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 19px;
+  right: 0;
+  background: {
+    image: url("../img/icon-cart.svg");
+    size: 20px 19px;
+    repeat: no-repeat;
+  }
+}
+
+.main-navigation__button {
+  display: block;
+  width: 20px;
+  height: 14px;
+  font-size: 0;
+  border: none;
+  background: {
+    image: url("../img/icon-menu-open.svg");
+    color: #ffffff;
+    size: 20px 14px;
+    repeat: no-repeat;
+  }
+}
