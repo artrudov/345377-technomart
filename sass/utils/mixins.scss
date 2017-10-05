@@ -5,7 +5,7 @@
 }
 
 /// Основной шрифты
-@mixin font-regular ($size, $weight, $style, $line, $color){
+@mixin font-regular ($size, $weight, $style, $line, $color) {
   font: {
     size: $size;
     family: "Open Sans", "Arial", sans-serif;
@@ -16,7 +16,7 @@
   color: $color;
 }
 
-@mixin font-bold ($size, $weight, $style, $line, $color){
+@mixin font-bold ($size, $weight, $style, $line, $color) {
   font: {
     size: $size;
     family: "Open Sans Bold", "Arial", sans-serif;
@@ -35,8 +35,7 @@
   @if $right > 0 {
     padding-right: $right;
   }
-  @if $bottom > 0
-  {
+  @if $bottom > 0  {
     padding-bottom: $bottom;
   }
   @if $left > 0 {
