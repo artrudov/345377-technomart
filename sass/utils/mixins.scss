@@ -29,15 +29,19 @@
 
 /// Примесь для установки внутренних отступов
 @mixin main-padding ($top, $right, $bottom: $top, $left: $right) {
+
   @if $top > 0 {
     padding-top: $top;
   }
+
   @if $right > 0 {
     padding-right: $right;
   }
-  @if $bottom > 0  {
+
+  @if $bottom > 0 {
     padding-bottom: $bottom;
   }
+
   @if $left > 0 {
     padding-left: $left;
   }
