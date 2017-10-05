@@ -8,9 +8,9 @@
 
 .form-section__title {
   @include main-padding (75px, 0, 81px, 0 );
-  @include font-bold (27px, 400, normal, 30px, #000000);
+  @include font-bold (27px, 400, normal, 30px, $header-color);
 }
 
 .form-section__description {
-  @include font-regular (13px, 400, normal, 24px, #444444);
+  @include font-regular (13px, 400, normal, 24px, $content-color);
 }

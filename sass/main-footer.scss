@@ -8,7 +8,7 @@
 
 .main-footer__link--copyright {
   position: relative;
-  @include font-bold (19px, 400, normal, 18px, #000000)
+  @include font-bold (19px, 400, normal, 18px, $header-color)
   text-decoration: none;
 
   &::before {

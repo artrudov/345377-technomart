@@ -11,7 +11,7 @@
 .main-navigation__link {
   display: block;
   @include main-padding( 31px, 0, 33px, 0);
-  @include font-bold (17px, 400, normal, 24px, #000000);
+  @include font-bold (17px, 400, normal, 24px, $header-color);
   text-decoration: none;
   border-top: 1px solid #ececec;
 }

@@ -8,17 +8,17 @@
 
 .catalog-product__title {
   @include reset-indent;
-  @include font-bold (17px, 400, normal, 24px, #000000);
+  @include font-bold (17px, 400, normal, 24px, $header-color);
 }
 
 .catalog-product__description {
   @include reset-indent;
-  @include font-regular (13px, 400, normal, 30px, #444444);
+  @include font-regular (13px, 400, normal, 30px, $content-color);
 }
 
 .catalog-product__price {
   @include reset-indent;
-  @include font-bold (15px, 400, normal, 24px, #000000);
+  @include font-bold (15px, 400, normal, 24px, $header-color);
 }
 
 .catalog-product__link--order {

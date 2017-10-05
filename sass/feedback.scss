@@ -5,19 +5,19 @@
 }
 
 .feedback__text {
-  @include font-regular (15px, 400, normal, 30px, #444444);
+  @include font-regular (15px, 400, normal, 30px, $content-color);
 }
 
 .feedback__autor-name {
-  @include font-bold (17px, 400, normal, 24px, #000000);
+  @include font-bold (17px, 400, normal, 24px, $header-color);
 }
 
 .feedback__autor-contact {
-  @include font-regular (15px, 400, normal, 30px, #444444);
+  @include font-regular (15px, 400, normal, 30px, $content-color);
 }
 
 .feedback__control {
-  @include font-bold (18px, 400, normal, 20px, #444444);
+  @include font-bold (18px, 400, normal, 20px, $content-color);
   text-decoration: none;
 }
 

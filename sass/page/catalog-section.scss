@@ -3,8 +3,8 @@
 }
 
 .catalog-section__title {
-  @include main-padding (75px, 0, 81px, 0 );
-  @include font-bold (27px, 400, normal, 30px, #000000);
+  @include main-padding (75px, 0, 81px);
+  @include font-bold (27px, 400, normal, 30px, $header-color);
 }
 
 .catalog-section__list {

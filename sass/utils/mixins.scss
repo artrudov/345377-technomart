@@ -29,7 +29,7 @@
 }
 
 /// Примесь для установки внутренних отступов
-@mixin main-padding ($top, $right, $bottom, $left){
+@mixin main-padding ($top, $right, $bottom: $top, $left: $right){
   @if $top > 0 {padding-top: $top;}
   @if $right > 0 {padding-right: $right;}
   @if $bottom > 0 {padding-bottom: $bottom;}
@@ -40,7 +40,7 @@
 @mixin background-wave {
   background: {
     // Исправить наименование файла
-    image: url("../img/zigzag-line-desktop.svg");
+    image: url("");
     repeat: repeat-x;
     size: 320px 7px;
     position: bottom;

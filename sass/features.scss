@@ -11,7 +11,7 @@
 .features__link {
   display: block;
   @include main-padding (30px, 30px, 34px, 30px);
-  @include font-bold (19px, 400, normal, 24px, #ffffff)
+  @include font-bold (19px, 400, normal, 24px, $additional-color)
   text-decoration: none;
 }
 
