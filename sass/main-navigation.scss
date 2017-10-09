@@ -1,11 +1,28 @@
 .main-navigation {
   @include reset-indent;
   background-color: #ffffff;
+
+}
+
+.main-navigation__logo {
+  @include main-padding(0, 30px);
+  position: relative;
+  text-align: center;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+}
+
+.main-navigation__button {
+  position: absolute;
+  bottom: 43%;
+  right: 30px;
 }
 
 .main-navigation__list {
   @include reset-indent;
   list-style: none;
+
+  display: none;
 }
 
 .main-navigation__link {
@@ -15,6 +32,10 @@
   @include font-bold (17px, 400, normal, 24px, $header-color);
   text-decoration: none;
   border-top: 1px solid #ececec;
+
+  &--logo {
+    @include main-padding(20px, 0, 16px, 0);
+  }
 }
 
 .main-navigation__link--cart::before {

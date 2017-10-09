@@ -1,7 +1,7 @@
 .features {
   width: 320px;
 
-  @include main-padding(0, 0, 34px, 0);
+  @include reset-indent;
 }
 
 .features__list {
@@ -12,29 +12,31 @@
 .features__link {
   display: block;
 
-  @include main-padding (30px, 30px, 34px, 30px);
+
   @include font-bold (19px, 400, normal, 24px, $additional-color);
   text-decoration: none;
 }
 
 .features__link--interior {
+  @include main-padding (26px, 77px, 28px, 29px);
 
   background: {
     color: #63d1bb;
     image: url("../img/icon-interior.svg");
     repeat: no-repeat;
     size: 40px 60px;
-    position: right;
+    position: 244px 23px;
   }
 }
 
 .features__link--toys {
+  @include main-padding (26px, 114px, 30px, 29px);
 
   background: {
     color: #56c3b2;
     image: url("../img/icon-toy.svg");
     repeat: no-repeat;
     size: 60px 60px;
-    position: right;
+    position: 233px 23px;
   }
 }
