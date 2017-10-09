@@ -1,14 +1,20 @@
 .main-header {
-  background-color: #fbfbfb;
+
 }
 
 .main-header__description {
+  min-height: 282px;
+
   @include reset-indent;
+  @include main-padding(0, 30px);
+  text-align: center;
+  background-color: #fbfbfb;
 }
 
 .main-header__caption {
   position: absolute;
+  width: 260px;
 
   @include font-bold (27px, 400, normal, 30px, #010000);
-  margin-top: -80px;
+  margin-top: -103px;
 }
