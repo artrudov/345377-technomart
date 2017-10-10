@@ -6,6 +6,7 @@
 }
 
 .feedback__text {
+  @include main-padding(9px, 0);
   @include font-regular (15px, 400, normal, 30px, $content-color);
 }
 
